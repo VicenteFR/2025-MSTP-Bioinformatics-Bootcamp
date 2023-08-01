@@ -11,7 +11,7 @@ Align reads to genome using STAR<br>
 
 ## Slides for Day 2:
 
-Slides for Day 2 can be found here: https://docs.google.com/presentation/d/1Twq3JUwoFixc1qGG20ZaCsO4yuTsshQmdaGOPcQsPJA/edit?usp=sharing
+Slides for Day 2 can be found here: https://docs.google.com/presentation/d/16ptuo-GGTtPVYbPcObu89QerZSKBOBbWbjnSTQgsxVk/edit#slide=id.p
 
 If you run into any issues or have any questions/concerns feel free to shoot me an email: tsears@ucsd.edu
 
