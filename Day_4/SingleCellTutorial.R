@@ -102,9 +102,8 @@ ElbowPlot(pbmc)
 #we probably want >20 clusters in our final grouping, but maybe not more than 30
 
 pbmc <- FindNeighbors(pbmc, dims = 1:20)
-pbmc <- FindClusters(pbmc, resolution = 0.2) # this resolution number here is the most important.
+pbmc <- FindClusters(pbmc, resolution = 0.1) # this resolution number here is the most important.
                                               # see if you can alter it until you get ~20 communities
-
 head(Idents(pbmc), 5)
 
 #run umap analysis so you can effectively plot your different clusters
@@ -193,21 +192,21 @@ DimPlot(pbmc, reduction = "umap", label = TRUE, repel = TRUE, group.by = 'custom
 ###################################
 
 #### HMMM WHICH clusters might be T cells? ####
+pbmc <- FindClusters(pbmc, resolution = 0.1) # re-run this to reset your identities
 
 new.cluster.ids <- c("Sperm!",              #0
                      "Cancer cells",        #1
                      "Memory CD8+ T cells", #2
-                     "Cancer Cells2",       #3
-                     "Plasmacytoid Dendritic cells",  #4
-                     "Endothelial",         #5
-                     "Non-classical monocytes", #6
-                     "unknown1",            #7
-                     "unknown2")            #8
+                     "Normal Prostate cells?",       #3
+                     "Unknown",  #4
+                     "Non-classical monocytes",         #5
+                     "Endothelial",         #6
+                     "Plasmacytoid Dendritic cells",            #7
+                     "Baseophils")            #8
 
 names(new.cluster.ids) <- levels(pbmc)
 pbmc <- RenameIdents(pbmc, new.cluster.ids)
 DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
-
 
 
 # Now, given a list of true identities, can we accurately pinpoint which is which?
@@ -220,6 +219,7 @@ DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 # LEGEND:
 # LE = luminal epithelial
 # DC = dendritic cell
-# 
 
+#remember, use your find marker genes table for help with this!
+# this database will help you too: https://panglaodb.se/search.html
 
