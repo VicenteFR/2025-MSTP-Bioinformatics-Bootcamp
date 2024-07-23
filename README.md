@@ -1,17 +1,17 @@
-# 2023 MSTP Bioinformatics Bootcamp
-Welcome to the course website for 2023 MSTP Bioinformatics Bootcamp!<br />
+# 2024 MSTP Bioinformatics Bootcamp
+Welcome to the course website for 2024 MSTP Bioinformatics Bootcamp!<br />
 
 ![HomeImage](https://imgs.xkcd.com/comics/dna.png)
 
 ## Course Information
 
-**When**: July 31-Aug 4 ; 8AM-12PM PDT
+**When**: Aug 12-Aug 16 ; 8AM-12PM PDT
 
 **Where**: Medical Education and Telemedicine Building (MET) 304
 
 **Instructor**: [Hannah Carter](https://carterlab.info/) (hkcarter@health.ucsd.edu)
 
-**TA**: [TJ Sears](https://github.com/TJ-Sears) (tsears@ucsd.edu)
+**TA**: [Adam Klie](https://github.com/adamklie) (aklie@ucsd.edu)
 
 Questions or concerns? Feel free to send along an email.
 
@@ -19,12 +19,12 @@ Questions or concerns? Feel free to send along an email.
 
 | Day  | Date | Topic | Links | Homework |
 | ------------- | ------------- |------------- |------------- |------------- |
-| 0 | **BEFORE** 08/1/2022  | **Setup**: *"Shall We Begin?"*  | [Day_0](https://github.com/TJ-Sears/2023-MSTP-Bioinformatics-Bootcamp/tree/main/Day_0_Setup) | [Generate Keys](https://github.com/jvtalwar/2022-MSTP-Bioinformatics-Bootcamp/tree/main/Day_0_Setup/Generate_Keys)<br />[Installations](https://github.com/TJ-Sears/2023-MSTP-Bioinformatics-Bootcamp/tree/main/Day_0_Setup/Installations)| 
-| 1  | 07/31/2023  | **Module 1**: Unix, TSCC, Installations  | [Day_1](https://github.com/TJ-Sears/2023-MSTP-Bioinformatics-Bootcamp/tree/main/Day_1)  | Read [Hangauer et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5933935/)| 
-| 2  | 08/1/2023  | **Module 2**: RNA Alignment (STAR, fastqc)  | [Day_2](https://github.com/TJ-Sears/2023-MSTP-Bioinformatics-Bootcamp/tree/main/Day_2)   | | 
-| 3  | 08/2/2023  | **Module 3**: RNA Analysis (GSEA, DGE)  | [Day_3](https://github.com/TJ-Sears/2023-MSTP-Bioinformatics-Bootcamp/tree/main/Day_3)  | |
-| 4  | 08/3/2023  | **Module 4**: RNA Analysis (WGCNA, RPKM, Pathway Analysis)  | [Day_4](https://github.com/jvtalwar/2022-MSTP-Bioinformatics-Bootcamp/tree/main/Day_4)  |[GenePattern Setup](https://github.com/jvtalwar/2022-MSTP-Bioinformatics-Bootcamp/blob/main/Day_5/Prerequisites%20for%20GenePattern%20workshop.ipynb) |
-| 5  | 08/4/2023  | **Module 5**: GenePattern Workshop  | [Day_5](https://github.com/jvtalwar/2022-MSTP-Bioinformatics-Bootcamp/tree/main/Day_5)  |[Post-Bootcamp Survey](https://forms.gle/ypZT4C9KEpLRTvvh9)|
+| 0 | **BEFORE** 08/1/2022  | **Setup**: *"Shall We Begin?"*  | [Day_0](https://github.com/adamklie/2024-MSTP-Bioinformatics-Bootcamp/tree/main/Day_0_Setup) | [Generate Keys](https://github.com/jvtalwar/2022-MSTP-Bioinformatics-Bootcamp/tree/main/Day_0_Setup/Generate_Keys)<br />[Installations](https://github.com/adamklie/2024-MSTP-Bioinformatics-Bootcamp/tree/main/Day_0_Setup/Installations)| 
+| 1  | 07/31/2024  | **Module 1**: Unix, TSCC, Installations  | [Day_1](https://github.com/adamklie/2024-MSTP-Bioinformatics-Bootcamp/tree/main/Day_1)  | Read [Hangauer et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5933935/)| 
+| 2  | 08/1/2024  | **Module 2**: RNA Alignment (STAR, fastqc)  | [Day_2](https://github.com/adamklie/2024-MSTP-Bioinformatics-Bootcamp/tree/main/Day_2)   | | 
+| 3  | 08/2/2024  | **Module 3**: RNA Analysis (GSEA, DGE)  | [Day_3](https://github.com/adamklie/2024-MSTP-Bioinformatics-Bootcamp/tree/main/Day_3)  | |
+| 4  | 08/3/2024  | **Module 4**: RNA Analysis (WGCNA, RPKM, Pathway Analysis)  | [Day_4](https://github.com/jvtalwar/2022-MSTP-Bioinformatics-Bootcamp/tree/main/Day_4)  |[GenePattern Setup](https://github.com/jvtalwar/2022-MSTP-Bioinformatics-Bootcamp/blob/main/Day_5/Prerequisites%20for%20GenePattern%20workshop.ipynb) |
+| 5  | 08/4/2024  | **Module 5**: GenePattern Workshop  | [Day_5](https://github.com/jvtalwar/2022-MSTP-Bioinformatics-Bootcamp/tree/main/Day_5)  |[Post-Bootcamp Survey](https://forms.gle/ypZT4C9KEpLRTvvh9)|
 
 ## Bioinformatics Resources
 
