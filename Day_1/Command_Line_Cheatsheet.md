@@ -1,3 +1,6 @@
+Adapted from
+
+
 # Introduction to the Command Line for Bioinformatics
 
 Welcome to the "Introduction to the Command Line" module, an essential component of our bioinformatics bootcamp. This module will guide you through the basics of command-line interfaces (CLI), focusing on Bash, the most common shell in UNIX and UNIX-like operating systems, which is crucial for bioinformatics workflows.
