@@ -1,4 +1,4 @@
-Adapted from
+@Adapted from the [PSTP bootcamp 2024](https://github.com/cartercompbio/PSTP_bootcamp_2024)
 
 # High-Performance Computing (TSCC) Usage Guide
 
@@ -16,29 +16,21 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
 - Duo authentication is a prerequisite.
 
 #### Step 2: Cluster Connection via SSH
-- **Windows Users:** Utilize MobaXTerm for SSH connectivity.
-  - **Hostname:** login.tscc.sdsc.edu
-  - **Username:** Please refer to the TAs for this information.
-
 - **Command Line Users (Mac/Linux):**
   - Initiate a connection with: `ssh yourUsername@login.tscc.sdsc.edu`
 
-### Step 3: Anaconda Installation
-#### Download
-- Retrieve the Anaconda installation script using: 
-  `curl -O https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh`
-
+### Step 3: Miniconda Installation
 #### Installation
-- Execute the script: `bash Anaconda3-2024.02-1-Linux-x86_64.sh`
-- Follow the on-screen prompts to install anaconda into an "anaconda3" folder in your local directory.
+- Execute the script: `bash Miniconda3-latest-Linux-x86_64.sh`
+- Follow the on-screen prompts to install miniconda into an "minoconda3" folder in your local directory.
 - Do you want to automatically initialize > yes
 - type "conda" to verify installation
 
 ### Step 4: Creating an Anaconda Environment
-- **Command:** `conda create -n python_3_8 python=3.8`
-  - **Explanation:** This command creates a new environment named "python_3_8" with Python 3.8.
-- **Command:** `conda activate python_3_8`
-  - **Explanation:** This command activates the environment "python_3_8".
+- **Command:** `conda create -n python_3_11 python=3.11`
+  - **Explanation:** This command creates a new environment named "python_3_11" with Python 3.11.
+- **Command:** `conda activate python_3_11`
+  - **Explanation:** This command activates the environment "python_3_11".
 - **Command:** `conda deactivate`
   - **Explanation:** This command deactivates the current environment.
 
@@ -49,9 +41,6 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
 3. `mkdir hello_world`
 4. Let's practice transferring files onto TSCC.
   Download the files `hello.py` and `run_hello.sb` from the `scripts/hello_world` folder in the repository.
-
-  **Windows users:**
-  - Go to your MobaXTerm.
 
   **Mac users:**
   - Go to your terminal.
