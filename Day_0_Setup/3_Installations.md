@@ -9,21 +9,31 @@
 
 # <div align="center"><b>Installations</b></div>
 
-In the practical section of this bootcamp, we will need access to several software programs to perform the analysis. Unfortunately, these programs don't come preinstalled on every machine and we need to install them ourselves.
+In the practical section of this bootcamp, we will need access to several software programs. Unfortunately, these programs don't come preinstalled on every machine and we need to install them ourselves.
 
-This can be a non-trivial task in bioinformatics, as many programs have dependencies on other programs. Below, we walk you through a common way to install bioinformatic software using a package manager called `miniconda`.
+This can be a non-trivial task in bioinformatics, as many programs have intracate and nasty dependencies. Below, we walk you through a common way to install bioinformatic software using a package manager called `miniconda`.
 
 # 1) Log into TSCC:
 
-Follow the instructions as outlined in the first two steps in the `/Day_0_Setup` folder.
+Follow the instructions as outlined in step 2: [2_TSCC](2_TSCC.md) to log in to TSCC.
 
 # 2) Start an Interactive Session
 
-When you log into TSCC, you are actually logging into the same computer that every other person who logs in is using. That is why it is critical that you **DO NOT** run any computationally intensive code on the login node.
+If you successfully logged into TSCC, you may notice that before your cursor, you may see something like the following:
+```bash
+[etrain82@login2 ~]$
+```
+`login2` actually means that that you are currently accessing something called the "login node." It is the machine (or small set of machines) that every other person who logs in is also using. 
 
-Instead, you will request a different set of compute resources where you and you alone can run your code. This can be done in a few ways, but for the purposes of installing software, we will use an interactive session.
+<div style="border: 2px solid #ff211d; padding: 15px; border-radius: 10px; background-color: #ffffff;">
+  <p style="color: #000000; font-family: Arial, sans-serif;">
+    Important Note: It is critical that you **DO NOT** run any computationally intensive code on the login node. Otherwise you might make even simple commands like navigating around to find different files painfully slow for fellow users and most likely draw the ire of the TSCC support team.
+  </p>
+</div>
 
-To start an interactive session for INSTALLATION, copy the following command to your terminal:
+Instead, you will request a different machine with resources  where you and you alone can run your code. This can be done in a few ways, but for the purposes of installing software, we will use an interactive session.
+
+To start an interactive session for **the purposed of installation**, copy the following command to your terminal:
 
 ```bash
 srun -N 1 -n 2 --mem 2G -t 1:00:00 -p hotel -q hotel -A htl191 --pty bash
@@ -48,9 +58,15 @@ srun: job 1974598 has been allocated resources
 ```
 with the job number changed accordingly.
 
+You might also note that the text before the prompt changed too. You should see something like:
+```bash
+bash-5.1$
+```
+This indicates that you are now on a separate machine with resources dedicated to you and you alone (the 5-1 is actually indicating that we are using bash version 5.1)
+
 # 3) Install Miniconda
 
-Luckily for us, there are so called ["package managers"](https://en.wikipedia.org/wiki/Package_manager) that make installation of programs a whole lot easier for us users. [Many package managers exist](https://en.wikipedia.org/wiki/List_of_software_package_management_systems), but we will be using [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for this bootcamp.
+Installing packages that are compatible can be a painful process for even seasoned bioinformaticians. Luckily for us, there are so called ["package managers"](https://en.wikipedia.org/wiki/Package_manager) that make it a whole lot easier. [Many package managers exist](https://en.wikipedia.org/wiki/List_of_software_package_management_systems), but we will be using [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for this bootcamp, as its very flexible and lightweight.
 
 Miniconda is pretty easy to install itself. Start by copying the the following file to your home directory:
 
@@ -58,7 +74,7 @@ Miniconda is pretty easy to install itself. Start by copying the the following f
 scp /tscc/nfs/home/hkcarter/Miniconda3-latest-Linux-x86_64.sh ~/.
 ```
 
-This file is a bash script (set of instructions) that will install Miniconda on your computer. To run it, type the following command:
+This file is a bash script (set of code instructions) that will install Miniconda on your account. To run the script, type the following command:
 ```bash
 cd ~
 bash Miniconda3-latest-Linux-x86_64.sh
@@ -71,25 +87,25 @@ Press enter when prompted
     &#128218; Pro Tip: Organizing external programs
   </h2>
   <p style="color: #1B5E20; font-family: Arial, sans-serif;">
-    Organizing code, data, and projects is a critical skill for any bioinformatician. There are numerous ways to organize your files, and many bioinformaticians have their own preferred methods. The key is to be consistent and ensure that your organization is logical, easy to understand, and well-documented.
+    Organizing code, data, and projects is a critical skill for any bioinformatician. There are numerous ways to organize your files, and you'll stumble across many different structures. The key is to be consistent and ensure that your organization is logical, easy to understand, and well-documented.
     <br><br>
-    I prefer to download any external programs or software into a folder called <code>opt</code> in my home directory. You can read more where the name came from <a href="https://www.baeldung.com/linux/opt-directory#:~:text=The%20FHS%20defines%20%2Fopt%20as,external%20or%20third%2Dparty%20software">here</a>. When the Miniconda installer prompts you to select an installation directory, specify a path other than your home directory, like <code>~/opt/miniconda3</code>. This will keep your home directory clean and organized.
+    I prefer to download any external programs or software into a folder called <code>opt</code> in my home directory. You can read more where the <code>opt</code> name came from <a href="https://www.baeldung.com/linux/opt-directory#:~:text=The%20FHS%20defines%20%2Fopt%20as,external%20or%20third%2Dparty%20software">here</a>. When the Miniconda installer prompts you to select an installation directory, specify a path other than your home directory, like <code>~/opt/miniconda3</code>. This will keep your home directory clean and organized.
   </p>
 </div>
 
+After hitting enter, you will then be presented with the license/terms and conditions. If you want to skip to the end, hit `q` and then accept the license terms by typing _yes_. 
 
-You will then be presented with the license/terms and conditions. If you want to skip to the end hit `q` and then accept the license terms by typing _yes_. 
-
-Miniconda will then present you with an installation location. It should be `tscc/nfs/home/etrain##/miniconda3`. Press enter to confirm the location 
+Miniconda will then present you with an installation location. It should be presented as `tscc/nfs/home/etrain##/miniconda3`. Press enter to confirm the location (or specify your own if you want to do a bit of organization.
 
 Miniconda is now installing! This may take a bit so don't get frustrated. Leave your terminal open and let this run.
+
+![image](https://github.com/user-attachments/assets/4808b7c3-5310-4f4d-b709-b926196e9329)
 
 Time to check if this worked. Type:
     
 ```bash
 conda --version
 ```
-
 
 You should see the following output:
 
@@ -103,7 +119,7 @@ Miniconda works by putting downloaded software into containers known as [environ
 
 This allows you to create different containers/environments that have different purposes.
 
-When you first install Miniconda, you are given a default environment called `base`. This is the environment that you are in when you first open a terminal.
+When you first install Miniconda, you are given a default environment called `base`. This is the environment that you are in when you first login to TSCC.
 
 We will need something called Jupyter notebooks to do analyses for this course (don't worry if you don't know what those are for now). To install Jupyter, run the following command:
 
@@ -118,7 +134,7 @@ conda install -c conda-forge jupyter jupyterlab
   <p style="color: #1B5E20; font-family: Arial, sans-serif;">
     Up until recently, conda performance was painfully slow. This has since been remedied to some extent, but I'm not sure if it's been fixed entirely. A much faster alternative to conda is a package manager called <a href="https://mamba.readthedocs.io/">mamba</a> that is a drop-in replacement for conda.
     <br><br>
-    <strong>To install mamba on an existing installation of conda:</strong>
+    <strong>To install mamba on an existing installation of conda, use the following:</strong>
     <br>
     <code>conda install -n base --override-channels -c conda-forge mamba 'python_abi=*=*cp*'</code>
   </p>
@@ -127,9 +143,9 @@ conda install -c conda-forge jupyter jupyterlab
 
 # 5. Creating an environment for running an `rna-seq` analysis
 
-In this bootcamp, we will be practicing what we learn by performing an RNA-seq analysis. We will get more into the details of this in the first couple days of bootcamp, but for now, we need to install some software that we will need later.
+In this bootcamp, we will be honing our software skills using an RNA-seq analysis. We will get more into the details of this in the first couple days of bootcamp, but for now, we need to install some software that we will need later.
 
-As a rule of thumb I install very little software in my base environment, the one exception to that is Jupyter which will allow us to run notebooks on TSCC.
+As a rule of thumb I install very little software in my base environment. Not doing so can lead to a bloated `base` environment that can cause performance issues. The one exception to that is Jupyter which will allow us to run notebooks on TSCC.
 
 Instead, we will create a new environment specifically for this bootcamp. Run the following command
 ```bash
@@ -158,14 +174,14 @@ Let's break this down
 - `numpy pandas matplotlib seaborn` - install the python packages numpy, pandas, matplotlib, and seaborn
 - `STAR fastqc samtools bzip2 subread` - install the programs STAR, fastqc, samtools, bzip2, and subread
 
-Great! Hopefully these ran successfully for you. If not, please let me know via email: aklie@ucsd.edu
+Some packages are not available via conda and instead can be installed via the Python package manager [`pip`](https://pip.pypa.io/en/stable/).
 
-Some packages we will want to use for downstream analysis are not available via conda. These are all packages written in Python and can be installed via the Python package manager [`pip`](https://pip.pypa.io/en/stable/).
-
-Lucky for us, `pip` comes default when a new Python environment is created. To install the packages we want, all we have to do is:
+Lucky for us, `pip` comes default when a new Python environment is created in conda and conda and pip are very compatible. To install the packages we want, all we have to do is:
 ```bash
 pip install decoupler pydeseq2 scanpy sanbomics gseapy PyWGCNA
 ```
+
+Great! Hopefully these ran successfully for you. We will talk more about the packages and what they are used for in the actual bootcamp.
 
 There is one last thing we need to do. Jupyter notebooks have no way of knowing where these programs are unless we tell it. First, we need to install something called ipykernel:
 ```bash
@@ -180,8 +196,8 @@ python -m ipykernel install --user --name 2024-mstp-bootcamp --display-name "Pyt
 
 One last time for this notebook, let's break this down:
 - `python -m ipykernel install` - run the command to install a new kernel
-- `--user` - install the kernel for the current user, as opposed to system-wide
-- `--name 2024-mstp-bootcamp` - name the kernel `2024-mstp-bootcamp`
+- `--user` - install the kernel for the current user only, as opposed to system-wide
+- `--name 2024-mstp-bootcamp` - name the kernel `2024-mstp-bootcamp`, this should match the conda environment name
 - `--display-name "Python 3.11 R 4.3.1 2024-mstp-bootcamp"` - display the kernel as "Python 3.11 R 4.3.1 2024-mstp-bootcamp" in Jupyter
 
 # DONE!
