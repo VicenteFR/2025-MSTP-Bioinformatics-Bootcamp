@@ -1,5 +1,4 @@
-Adapted from
-
+@Adapted from the [PSTP bootcamp 2024](https://github.com/cartercompbio/PSTP_bootcamp_2024)
 
 # Introduction to the Command Line for Bioinformatics
 
@@ -112,7 +111,6 @@ Basic `vim` commands:
 2. Open a large file with `less` and practice navigating up and down. Search for the term "gene".
 3. Create a new file with `vim`. Enter some text, save, and exit `vim`.
 
-
 ## Understanding File Permissions in UNIX/Linux
 
 In UNIX and Linux systems, file permissions control the level of access granted to users for reading, writing, and executing files and directories. Understanding and managing file permissions is crucial for ensuring the security and proper functionality of files within the system.
@@ -179,6 +177,5 @@ While Bash is our primary focus, being aware of other scripting languages such a
 2. Inside `bioinfo_projects`, create an empty file named `sample.txt`.
 3. Use `ls` to list all items within `bioinfo_projects` and `cat` to display the contents of `sample.txt`.
 4. Practice More with this Online Tutorial from [Linux Journey](https://linuxjourney.com/lesson/the-shell)
-
 
 Congratulations on completing this introductory module! You've taken your first step into the powerful world of command-line interfaces, a cornerstone of bioinformatics analysis.
