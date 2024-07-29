@@ -11,4 +11,4 @@ Learn about FASTQ format<br>
 
 Slides for Day 1 can be found here: TODO
 
-If you run into any issues or have any questions/concerns feel free to shoot me an email: tsears@ucsd.edu
+If you run into any issues or have any questions/concerns feel free to shoot me an email: aklie@ucsd.edu
