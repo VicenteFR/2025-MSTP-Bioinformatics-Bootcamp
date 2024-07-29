@@ -35,6 +35,6 @@ Now after selecting Ubuntu you should see a Ubuntu terminal running. This means 
 # DONE!
 ![CharmanderUsedFireBlast](https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-blue-version/d/d4/Charmander.gif?width=325)
 
-You can now move onto the next step: [TSCC](2_TSCC.md)
+You can now move onto the next step: [2_TSCC](2_TSCC.md)
 
 ---
