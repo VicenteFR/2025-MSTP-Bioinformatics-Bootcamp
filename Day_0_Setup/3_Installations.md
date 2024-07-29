@@ -23,17 +23,17 @@ If you successfully logged into TSCC, you may notice that before your cursor, yo
 ```bash
 [etrain82@login2 ~]$
 ```
-`login2` actually means that that you are currently accessing something called the "login node." It is the machine (or small set of machines) that every other person who logs in is also using. 
+`login2` actually means that that you are currently accessing something called the "login node." It is the machine that every other person who logs in to TSCC is also using. 
 
 <div style="border: 2px solid #ff211d; padding: 15px; border-radius: 10px; background-color: #ffffff;">
   <p style="color: #000000; font-family: Arial, sans-serif;">
-    Important Note: It is critical that you **DO NOT** run any computationally intensive code on the login node. Otherwise you might make even simple commands like navigating around to find different files painfully slow for fellow users and most likely draw the ire of the TSCC support team.
+    Important Note: It is critical that you **DO NOT** run any computationally intensive code on the login node. Otherwise you might make even simple commands like navigating around files painfully slow for fellow users and you most likely draw the ire of the TSCC support team.
   </p>
 </div>
 
-Instead, you will request a different machine with resources  where you and you alone can run your code. This can be done in a few ways, but for the purposes of installing software, we will use an interactive session.
+Instead, you will request a different machine and set of resources just for you (aren't you special). This can be done in a few ways, but for the purposes of installing software, we will use an interactive session.
 
-To start an interactive session for **the purposed of installation**, copy the following command to your terminal:
+To request resources in something called an "interactive session" (will be covered later), **just for the the purposes of installation**, copy the following command to your terminal and hit enter:
 
 ```bash
 srun -N 1 -n 2 --mem 2G -t 1:00:00 -p hotel -q hotel -A htl191 --pty bash
