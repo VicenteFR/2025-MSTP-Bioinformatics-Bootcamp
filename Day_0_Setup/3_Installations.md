@@ -143,7 +143,7 @@ conda install -c conda-forge jupyter jupyterlab
 
 # 5. Creating an environment for running an `rna-seq` analysis
 
-In this bootcamp, we will be honing our software skills using an RNA-seq analysis. We will get more into the details of this in the first couple days of bootcamp, but for now, we need to install some software that we will need later.
+During bootcamp, we will be honing our bioinformatic skills using an RNA-seq analysis. We will get more into the details of this in the first couple days, but for now, we need to install some software that we will need later.
 
 As a rule of thumb I install very little software in my base environment. Not doing so can lead to a bloated `base` environment that can cause performance issues. The one exception to that is Jupyter which will allow us to run notebooks on TSCC.
 
@@ -201,6 +201,6 @@ One last time for this notebook, let's break this down:
 - `--display-name "Python 3.11 R 4.3.1 2024-mstp-bootcamp"` - display the kernel as "Python 3.11 R 4.3.1 2024-mstp-bootcamp" in Jupyter
 
 # DONE!
-Congratulations! You have successfully installed Miniconda, Jupyter, and all the software you need for the bootcamp. You should be all set to go for Day 1. Feel free to email me with any questions!
+Congratulations! You have successfully installed Miniconda, Jupyter, and most of the software you need for the bootcamp. You should be all set to go for Day 1. Feel free to email me with any questions!
 
 ---
