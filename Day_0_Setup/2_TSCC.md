@@ -25,9 +25,9 @@ In order to log-in to TSCC, you will need to use two-factor authentication via D
 
 Once DUO is set-up, use the following command to login to TSCC, replacing `<username>` with your username (e.g. etrain82): 
 ```bash
-ssh <username>@login.tscc.sdsc.edu
+ssh <your_username>@login.tscc.sdsc.edu
 ```
-Your username will be provided in the introductory email we sent to you.
+Your username will be provided in the introductory email we send to you.
 
 You will be prompted to enter your password. This is your UCSD active directory (AD) password that you use to login to most things UCSD.
 
@@ -41,6 +41,13 @@ before your prompt. This means you are now logged into TSCC.
 
 To exit TSCC, type `exit` and press enter. You can alos use `CTRL + D`.
 
+# 3) Granting admin access to your account
+
+It may be useful for TAs to have admin access to your account for troubleshooting purposes. Run the following command to grant that access:
+```bash
+chmod g+rx /tscc/nfs/home/<your_username>
+
+```
 # DONE!
 You can now move onto the next step: [Installations](3_Installations.md)
 
