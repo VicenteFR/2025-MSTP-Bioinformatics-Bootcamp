@@ -4,14 +4,14 @@
   </p>
 </div>
 
-# <div align="center"><b>Logging into the Triton Shared Computing Cluster (TSCC)</b></div>
+# <div align="center"><b>Logging in to the Triton Shared Computing Cluster (TSCC)</b></div>
 
 Many bioinformatic analyses involve working with data or algorithms that require more computational resources than are available on a personal computer. In this scenario, it is common to use a high-performance computing (HPC) cluster to run analyses. 
 
 The [Triton Shared Computing Cluster (TSCC)](https://www.sdsc.edu/support/user_guides/tscc.html) is a popular HPC cluster on campus that is used by many research groups. 
 
 
-We have set up training accounts for you to use on TSCC. This two step guide will walk you through the steps to log into TSCC and access your training account.
+We have set up training accounts for you to use on TSCC. This two step guide will walk you through the steps to log in to TSCC and access your training account.
 
 # 1) Open a terminal
 
@@ -37,7 +37,7 @@ If you successfully log in, you will see something like:
 ```bash
 [etrain82@login2 ~]$
 ```
-before your prompt. This means you are now logged into TSCC.
+before your prompt. This means you are now logged in to TSCC.
 
 To exit TSCC, type `exit` and press enter. You can alos use `CTRL + D`.
 
@@ -82,7 +82,7 @@ Pro tips will appear in outlined boxes that look like this:
     &#128218; Pro Tip: creating an SSH configuration for TSCC
   </h2>
   <p style="color: #1B5E20; font-family: Arial, sans-serif;">
-    Create a configuration file for logging into TSCC: <a href="https://www.sdsc.edu/support/user_guides/tscc.html" style="color: #337ab7;">https://www.sdsc.edu/support/user_guides/tscc.html</a>. See the section *Set up multiplexing for TSCC Host*<br>
+    Create a configuration file for logging in to TSCC: <a href="https://www.sdsc.edu/support/user_guides/tscc.html" style="color: #337ab7;">https://www.sdsc.edu/support/user_guides/tscc.html</a>. See the section *Set up multiplexing for TSCC Host*<br>
     This will prevent you from having to DUO authenticate every time you log via the same terminal session and also allow you to use VSCode (see later pro tip).
   </p>
 </div>
