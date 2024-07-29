@@ -48,7 +48,7 @@ You can now move onto the next step: [Installations](3_Installations.md)
 
 # Pro tips
 
-Most of what will be taught in this bootcamp will be the basic versions of tools, commands, and concepts. If you have some familiarity with bioinformatics, or even programming in other disciplines, you may be interested on expanding on these basics. I've added a few sections to all the notebooks labeled "Pro tips" meant to cover more advanced tasks.
+Most of what will be taught in this bootcamp will be the basic versions of tools, commands, and concepts. If you have some familiarity with bioinformatics, or even programming in other disciplines, you may be interested on expanding on these basics. I've added a few sections to many of the guides labeled "Pro tips" meant to tackle best practices, efficiency hacks and more.
 
 <div style="border: 2px solid #ff211d; padding: 15px; border-radius: 10px; background-color: #ffffff;">
   <p style="color: #000000; font-family: Arial, sans-serif;">
@@ -57,7 +57,7 @@ Most of what will be taught in this bootcamp will be the basic versions of tools
 </div>
 
 
-Pro tips will appear in green outlined boxes such as the following:
+Pro tips will appear in (sometimes green) outlined boxes that look like this:
 
 <div style="border: 2px solid #4CAF50; padding: 15px; border-radius: 10px; background-color: #e8f5e9;">
   <h2 style="color: #388E3C; font-family: Arial, sans-serif;">
