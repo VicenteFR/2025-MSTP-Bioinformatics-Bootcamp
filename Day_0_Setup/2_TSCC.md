@@ -27,7 +27,7 @@ Once DUO is set-up, use the following command to login to TSCC, replacing `<user
 ```bash
 ssh <username>@login.tscc.sdsc.edu
 ```
-Your username will be provided to you via email.
+Your username will be provided in the introductory email we sent to you.
 
 You will be prompted to enter your password. This is your UCSD active directory (AD) password that you use to login to most things UCSD.
 
@@ -48,23 +48,22 @@ You can now move onto the next step: [Installations](3_Installations.md)
 
 # Pro tips
 
-Most of what will be taught in this bootcamp will be the basic versions of tools, commands, and concepts. If you have some familiarity with bioinformatics, or even programming in other disciplines, you may be interested on expanding on these basics. I've added a few sections to many of the guides labeled "Pro tips" meant to tackle best practices, efficiency hacks and more.
+Most of what will be taught in this bootcamp will be the basic versions of tools, commands, and concepts. If you have some familiarity with bioinformatics, or even programming in other disciplines, you may be interested on expanding on these basics. I've added a few sections to many of the guides throughout the course labeled "Pro tips" meant to tackle best practices, efficiency hacks and more.
 
 <div style="border: 2px solid #ff211d; padding: 15px; border-radius: 10px; background-color: #ffffff;">
   <p style="color: #000000; font-family: Arial, sans-serif;">
-    Important Note: These pro tips are completely optional and are generally not necessary for any analysis. If you are someone who is just getting started with bioinformatics, I would recommend skipping these sections for now and coming back to them later.
+    Important Note: These pro tips are completely optional and NOT NCESSARY for completing the bootcamp tasks. If you are someone who is just getting started with bioinformatics, I would recommend skipping these sections for now and coming back to them later.
   </p>
 </div>
 
-
-Pro tips will appear in (sometimes green) outlined boxes that look like this:
+Pro tips will appear in outlined boxes that look like this:
 
 <div style="border: 2px solid #4CAF50; padding: 15px; border-radius: 10px; background-color: #e8f5e9;">
   <h2 style="color: #388E3C; font-family: Arial, sans-serif;">
-    &#128218; Pro Tip: iTerm2 a better terminal emulator (for macOS users)
+    &#128218; Pro Tip: Download iTerm2 (for macOS users)
   </h2>
   <p style="color: #1B5E20; font-family: Arial, sans-serif;">
-    I'm not a huge fan of Mac's built in terminal. I prefer iTerm2 . It's not necessary for this course but it's a much better terminal emulator, for both appearance and functionality.<br><br>
+    I'm not a huge fan of Mac's built in terminal. I prefer iTerm2. It's not necessary for this course but it's a much better terminal emulator, in both appearance and functionality.<br><br>
     Install iTerm2 here: <a href="https://iterm2.com/" style="color: #1E88E5;">https://iterm2.com/</a><br><br>
     There are many other terminal emulators out there, some of which are may be better than iTerm2. Feel free to explore and find one that you like.
   </p>
