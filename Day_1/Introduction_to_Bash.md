@@ -107,7 +107,7 @@ This will move you up one level. To move up two levels simply use `..` separated
 
 This will allow us to change our relative path, or location relative to where we are now. 
 
-This as opposed to the "absolute path", where the entire path is defined in identifying our absolute location. We can also change location to any other directory (in the following example, the directory `test3` from our current location (say our home directory `~` ), so long as we provide an absolute path.
+This as opposed to the "absolute path", where the entire path is defined in identifying our absolute location. We can also change location to any other directory (in the following example, the directory `test3` from our current location, say our home directory `~` ), so long as we provide an absolute path.
 
 `cd ~`
 
@@ -129,21 +129,22 @@ Now that we're in our new directory, let's make a blank text file here. To do so
 
 This will open a blank screen with several ~ on the left-hand side:
 
-bash
+
+```bash
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+~                                                                                                                  
+"test_file.txt" [New File]
 ```
-~                                                                                                                  
-~                                                                                                                  
-~                                                                                                                  
-~                                                                                                                  
-~                                                                                                                  
-~                                                                                                                  
-~                                                                                                                  
-~                                                                                                                  
-~                                                                                                                  
-~                                                                                                                  
-~                                                                                                                  
-~                                                                                                                  
-"test_file.txt" [New File]```
 
 This is the text file (`test_file.txt`) that you just created. The filename will be displayed in the bottom left hand corner with a `[New File]` label. You can use the arrow keys to move the cursor around the file. You can edit the contents of your document by entering Insert mode by pressing `i`, followed by typing in whatver you would like. To leave, we can press `esc`, followed by `:wq` to save and quit (`w` to save, `q` to quit)- you can also use `:x!` to save and quit as well. Let's try:
 
