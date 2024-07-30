@@ -21,7 +21,7 @@ Questions or concerns? Feel free to send along an email.
 | ------------- | ------------- |------------- |------------- |------------- |
 | 0 | **BEFORE** 08/12/2024  | **Setup**: *"Shall We Begin?"*  | [Day_0](https://github.com/cartercompbio/2024-MSTP-Bioinformatics-Bootcamp/tree/main/Day_0_Setup) | [Pre-Bootcamp Survey](https://forms.gle/f7Cezv812vdTRiyV7)<br />[Install Ubuntu (only if Windows user)](https://github.com/cartercompbio/2024-MSTP-Bioinformatics-Bootcamp/blob/main/Day_0_Setup/1_LinuxOnWindows.md)<br />[Log-in to TSCC](https://github.com/cartercompbio/2024-MSTP-Bioinformatics-Bootcamp/blob/main/Day_0_Setup/2_TSCC.md)<br />[Installations](https://github.com/cartercompbio/2024-MSTP-Bioinformatics-Bootcamp/blob/main/Day_0_Setup/3_Installations.md) |
 | 1  | 08/12/2024  | **Module 1**: Bootcamp prep and genomics overview  | [Day_1]()  | Read [Hangauer et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5933935/)| 
-| 2  | 08/13/2024  | **Module 2**: QCing and Aligning sequencing reads (STAR, fastqc)  | [Day_2]() | UNDER CONSTRUCTION |
+| 2  | 08/13/2024  | **Module 2**: QCing and Aligning sequencing reads | [Day_2]() | UNDER CONSTRUCTION |
 | 3  | 08/14/2024  | **Module 3**: Alignment QC and quantification  | [Day_3]() | UNDER CONSTRUCTION |
 | 4  | 08/15/2024  | **Module 4**: Downstream analysis in Python (DEGs, GSEA, WGCNA)  | [Day_4]() | UNDER CONSTRUCTION |
 | 5  | 08/16/2024  | **Module 5**: GenePattern Workshop  | [Day_5](Day_5)  | UNDER CONSTRUCTION |
