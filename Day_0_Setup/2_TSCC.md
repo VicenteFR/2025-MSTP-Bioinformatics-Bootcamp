@@ -51,9 +51,9 @@ It may be useful for TAs to have admin access to your account for troubleshootin
 chmod -R o+rx /tscc/nfs/home/<your_username>
 ```
 
-Again replacing <your_username> with your provided username.
+Again replacing `<your_username>` with your provided username.
 # DONE!
-You can now move onto the next step: [Installations](3_Installations.md)
+You can now move onto the next step: [3_Installations](3_Installations.md)
 
 ---
 
