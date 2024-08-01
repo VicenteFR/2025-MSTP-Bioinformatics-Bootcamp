@@ -1,6 +1,4 @@
 # Pre-Bootcamp Preparation
-Welcome to the 2024 MSTP Bioinformatics Bootcamp! 
-
 To make sure we don't spend the whole first day troubleshooting, we will to do some set-up before the bootcamp starts.
 
 ## 1. Windows Users: Install Linux on Windows
