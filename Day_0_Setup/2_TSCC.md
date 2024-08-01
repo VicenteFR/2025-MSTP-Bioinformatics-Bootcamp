@@ -11,7 +11,7 @@ Much of bioinformatics involves working with data or algorithms that require mor
 The [Triton Shared Computing Cluster (TSCC)](https://www.sdsc.edu/support/user_guides/tscc.html) is an HPC cluster on campus that is used by many research groups. 
 
 
-We have set up training accounts for you to use on TSCC. This two step guide will walk you through the steps to log in to TSCC and access your training account.
+We have set up training accounts for you to use on TSCC. This three step guide will walk you through the steps to log in to TSCC and access your training account.
 
 # 1) Open a terminal
 
@@ -23,17 +23,15 @@ We have set up training accounts for you to use on TSCC. This two step guide wil
 
 In order to log in to TSCC, you will need to use two-factor authentication via DUO. See [this guide](https://support.ucsd.edu/services?id=kb_article_view&sys_kb_id=dba41d798776d11c947a0fa8cebb3527&sysparm_article=KB0020168) to get this set-up on one of your devices.
 
-Once DUO is set-up, use the following command to login to TSCC, replacing `<your_username>` with your username (e.g. etrain82) that is provided in the introductory email we send to you.
-```bash
-ssh <your_username>@login.tscc.sdsc.edu
-```
+Once DUO is set-up, use `ssh <your_username>@login.tscc.sdsc.edu` to log in to TSCC. Replace `<your_username>` with the username provided to you in the introductory email. For example:
 
-For example:
 ```bash
 ssh etrain82@login.tscc.sdsc.edu
 ```
 
-You will be prompted to enter your password. This is your UCSD active directory (AD) password that you use to login to most things UCSD.
+would log in to the account `etrain82`.
+
+You will be prompted to enter your password. This is your UCSD active directory (AD) password that you use to log in to most things UCSD.
 
 Two-factor authentication will then prompt you to confirm your login. Follow the instructions to confirm.
 
@@ -50,6 +48,8 @@ To exit TSCC, type `exit` and press enter. You can alos use `CTRL + D`.
 It may be useful for TAs to have admin access to your account for troubleshooting purposes. Run the following command to grant that access:
 ```bash
 chmod -R o+rx /tscc/nfs/home/<your_username>
+
+Again replacing <your_username> with your provided username.
 
 ```
 # DONE!
