@@ -64,6 +64,8 @@ Let's break down this command
 - `-A htl191` - give me resources from this *allocation*. We have a set of amount of resources that are *allocated* to us via this identifier.
 - `--pty bash` - give me a bash shell to work in. This is the *something* that we are asking the cluster to do. Give me a playground to run commands in.
 
+Don't worry if you didn't follow a lot of that. We will cover much of this the first day and some of it you don't ever really need to understand.
+
 You are now in your own safe space to perform all the installations your heart desires.
 
 # 3) Install Miniconda
