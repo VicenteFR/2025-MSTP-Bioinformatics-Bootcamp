@@ -46,12 +46,12 @@ To exit TSCC, type `exit` and press enter. You can alos use `CTRL + D`.
 # 3) Granting admin access to your account
 
 It may be useful for TAs to have admin access to your account for troubleshooting purposes. Run the following command to grant that access:
+
 ```bash
 chmod -R o+rx /tscc/nfs/home/<your_username>
+```
 
 Again replacing <your_username> with your provided username.
-
-```
 # DONE!
 You can now move onto the next step: [Installations](3_Installations.md)
 
