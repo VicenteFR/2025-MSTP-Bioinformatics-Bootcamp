@@ -28,7 +28,7 @@ Getting comfortable with Unix is all about practice, repitition and patience. Le
 
 ## *Where are you currently?*
 
-When using a terminal you will always be inside a folder, or directory. But, at any given time, you may lose track of what directory you are currently in. To do so, we use "print working directory", or `pwd`:
+When using a terminal you will always be inside a folder, or directory. But, at any given time, you may lose track of what directory you are currently in. To check where we are, we use "print working directory", or `pwd`:
 
 `pwd`
 
@@ -38,7 +38,7 @@ What does your output look like? This is mine:
 
 This is the "path" to my current, or working, directory. The path details the location of the directory in the file system. The file system is the way an operating system organizes files on a disk. The file system is hierarchical, meaning that files are organized in a tree-like structure of directories, or folders. The root directory is the top of the file system hierarchy. In Unix, the root directory is denoted by a forward slash `/`.
 
-My current directory also happens to be my home directory, or starting point when I log into TSCC. Luckily, we have a shortcut to get back to this point, which is marked by a tilde (`~`). So, if we ever wanted to get back to this directory from any point on the computer, we would simply type:
+My current directory also happens to be my home directory, or starting point when I log into TSCC. The shortcut to get back to this point is the tilde (`~`). If we ever wanted to get back to this home directory from any other directory, we would simply type:
 
 `cd ~`
 
@@ -46,7 +46,7 @@ My current directory also happens to be my home directory, or starting point whe
 
 ## *Where can we go?*
 
-Now that we know where we are, we should try and see what folders are in my working directory:
+Now that we know where we are, we should try and see what folders exist in in my current working directory:
 
 `ls`
 
@@ -63,7 +63,7 @@ Regardless of whether your home directory is empty or not, let's start making th
 
 ## Making and navigating directories
 
-Let's make a new directory in our own home directory called "bootcamp" using the command mkdir:
+Let's make a new directory in our own home directory called "bootcamp" using the command `mkdir`:
 
 `mkdir bootcamp`
 
@@ -71,7 +71,7 @@ Let's use `ls` to see what our home directory looks like now:
 
 `ls`
 
-In your home directory you should now see `bootcamp`. This shows that you have now created a new directory, or folder, on your TSCC account. Let's navigate to this directory on the command-line by using the command `cd`, or change directory:
+You should now see `bootcamp`. Let's navigate to the `bootcamp` by using the command `cd`, or change directory:
 
 `cd bootcamp`
 
@@ -81,21 +81,23 @@ Try pwd again. The output will be different than before.
 
 `/tscc/nfs/home/aklie/bootcamp`
 
-You are now in the directory, or folder, that you just created. This is how you will make new directories to properly organize your own workspace. When naming a new directory, it is always a good idea to separate words by an underscore ( _ ) to prevent unsual notation.  For instance:
+You are now in the `bootcamp` directory that you just created. This is how you will make new directories to properly organize your own workspace. `mkdir`, `cd` and repeat~
+
+When naming a new directory, it is always a good idea to separate words by an underscore ( _ ) to prevent unsual notation.  For instance:
 
 `mkdir new_directory`
 
-As opposed to:
+is preferred to:
 
 `mkdir new directory`
 
-White space is the bane of the bioinformaticist's existence. It is always best to avoid it when naming files and directories.
+White space is the bane of the bioinformaticist's existence! It is always best to avoid it when naming files and directories.
 
-You can also make many levels of subdirectories simultaneously using the `mkdir` command, but need to add an additional note, or flag, to do it in one command:
+You can also make many levels of subdirectories simultaneously using the `mkdir` command by adding something called a "flag":
 
 `mkdir -p test1/test2/test3`
 
-Here `-p` means "make parent directories as needed." This can be a fast way of creating new directories several levels lower without having to first navigate to the level immediately below the one you started in.
+Here the `-p` is a flag that means "make parent directories as needed." This can be a fast way of creating new directories several levels lower without having to first navigate to the level immediately below the one you started in.
 
 To move back up a level in your directory hierarchy, you will use two periods `..` to do so:
 
@@ -105,11 +107,11 @@ This will move you up one level. To move up two levels simply use `..` separated
 
 `cd ../..`
 
-This will allow us to change our relative path, or location relative to where we are now. 
-
-This as opposed to the "absolute path", where the entire path is defined in identifying our absolute location. We can also change location to any other directory (in the following example, the directory `test3` from our current location, say our home directory `~` ), so long as we provide an absolute path.
+This will allow us to change our "relative path", or location relative to where we are now. Let's go back home for now:
 
 `cd ~`
+
+We can also change directories to an "absolute path", where the entire path is defined in identifying our *absolute* location in the file system:
 
 `cd ~/bootcamp/test1/test2/`
 
@@ -123,12 +125,15 @@ Now that we're in our new directory, let's make a blank text file here. To do so
 
 ![image.png](Introduction_to_Bash_files/image.png)
 
+Start by navigating back to the `bootcamp` directory:
+
 `cd ~/bootcamp/`
+
+Then type:
 
 `vi test_file.txt`
 
 This will open a blank screen with several ~ on the left-hand side:
-
 
 ```bash
 ~                                                                                                                  
@@ -146,7 +151,9 @@ This will open a blank screen with several ~ on the left-hand side:
 "test_file.txt" [New File]
 ```
 
-This is the text file (`test_file.txt`) that you just created. The filename will be displayed in the bottom left hand corner with a `[New File]` label. You can use the arrow keys to move the cursor around the file. You can edit the contents of your document by entering Insert mode by pressing `i`, followed by typing in whatver you would like. To leave, we can press `esc`, followed by `:wq` to save and quit (`w` to save, `q` to quit)- you can also use `:x!` to save and quit as well. Let's try:
+This is the text file (`test_file.txt`) that you just created. The filename will be displayed in the bottom left hand corner with a `[New File]` label. You can use the arrow keys to move the cursor around the file. You can enter `Insert` mode by pressing `i` to edit the contents of your document, followed by typing in whatever you would like. To exit `vi`, we first need to get out of `Insert` mode with the `esc` key, followed by `:wq` to save and quit (`w` to save, `q` to quit). 
+
+Let's see if we can put that altogether:
 
 `i`
 
@@ -156,7 +163,7 @@ This is the text file (`test_file.txt`) that you just created. The filename will
 
 `:wq!` or `:x!`
 
-This will take you back to your bootcamp directory. Did it work? Let's check by looking at the contents of our directory using:
+Did it work? Let's check by looking at the contents of our directory using:
 
 `ls`
 
@@ -174,21 +181,21 @@ It should look something like
 
 `I am writing in a new text file`
 
-`cat` is the simplest command to view a file in Linux. It simply prints the content of files. This is ok in this situation where our file is only 1 line, but imagine if we have a file with millions of lines, your screen will be flooded.
+`cat` is the simplest command to view a file in Linux. It simply prints the content of files. This is ok in this situation where our file is only 1 line, but imagine if we have a file with millions of lines, your screen would be flooded with text!
 
-Another popular command to view files is `less`. The `less` command views the file one page at a time and you can exit by pressing `q`. There are no lines displayed on your screen.
+This is where the `less` command comes in. The `less` command views the file one page:
 
 `less test_file.txt`
 
-`q`
+ You can exit by less by simply typing `q` followed by enter.
 
-What if you want to print just the first or last 10 lines of a file. **head** and **tail** are good linux commands for this purpose. Head prints the first **n** lines of a file and tail prints the last **n** lines of a file.
+What if you want to print just the first or last 10 lines of a file. This can be useful if you just want to get a sense of what the file contains. **head** and **tail** are good linux commands for this purpose. Head prints the first **n** lines of a file and tail prints the last **n** lines of a file.
 
 `head test_file.txt`
 
 `tail test_file.txt`
 
-By default 10 lines are printed, you can change the number of lines printed with a flag. A flag is a `-` (or `--`) followed by a letter or word that affects how your command is run. Flags are specific to a commmand, and so need to be looked up in order to be used to their full potential. To find out more about a specific program's flags, use the man function in front of the command name. For instance:
+By default 10 lines are printed, you can change the number of lines printed with the `-n` flag. Flags are specific to a commmand, and can be looked up using the `man` function. If we wanted to look up the flags for the `head` command for instance, we would use:
 
 `man head`
 
@@ -214,11 +221,11 @@ Use your arrow keys to go to the end of the prompt, delete what we wrote previou
 
 `:wq!`
 
-Let's look at our file now using either less, cat, head,or tail:
+Let's look at our file now using either `less`, `cat`, `head`, or `tail`:
 
-You can see that we overwrote our original contents. This shows us that `vi` is a means to not only make new files, but to edit pre-existing ones too.
+You can see that we overwrote our original contents. `vi` can be used for both making new files and editing pre-existing ones too!
 
-OR, if after making corrections you decide to quit insert mode without saving changes, you can press esc, then follow with `:q!` (q to quit, ! to force):
+If after making corrections you decide you don't like them and want to exit the file without saving changes, you can press `esc`, then `:q!` (q to quit, ! to force):
 
 `vi test_file.txt`
 
@@ -232,17 +239,19 @@ OR, if after making corrections you decide to quit insert mode without saving ch
 
 ## Use tabs for auto-completion
 
-_Many mistakes can be introduced due to typos_. This is especially notable when receiving error messages that are a direct result providing the wrong location for input files. Thus, we try to rely on tabs to fill in what is already known by the computer. This will be essential when filling out absolute paths, or the series of directories that must be followed to get to a particular file. As an example, let's go from our home directory to our newly created file:
+_Many mistakes in programming are introduced by typos_. We can use bash's built-in auto-completion to help us avoid this. This is often most useful in navigating the file system. As an example, let's go from our home directory to our newly created file:
 
 `cd ~`
 
-Next we want to navigate to our newly made folder. If we begin typing "bootcamp", but press tab part-way through, our computer can fill out the rest if the word is unique:
+If we begin typing "bootcamp", but press tab part-way through, our computer can fill out the rest if the word is unique:
 
 `cd boot<tab>`
 
 `cd bootcamp/`
 
-If there multiple files or directories that have the same prefix, you can press tab twice to see all the objects that fit this description. Then, you can add additional characters and use tab complete to go to the file or directory of interest.
+Great, now let's type "te" and then tab to let auto-completion due it's thing.
+
+Hang on a sec. What happened? If there multiple files or directories that have the same prefix, you can press tab twice to see all the objects that fit this description. Then, you can add additional characters and use tab complete to go to the file or directory of interest.
 
 `less test<tab><tab>`
 
@@ -295,7 +304,7 @@ The contents of the file will be exactly the same, but its name will now be diff
 
 To remove a file, we use a command known as `rm`. Simply make sure that you are in the directory that houses the file that you wish to delete, and perform the following:
 
-`rm interesting_file.txt`
+`rm really_interesting_file.txt`
 
 To remove a directory, you may still use `rm`, though you will aneed to provide the `-r` flag to remove recursively:
 
@@ -307,7 +316,7 @@ To remove a directory, you may still use `rm`, though you will aneed to provide 
 
 ## Organize your home directory
 
-Organization is a really difficult thing in computational biology, and everyone has their own preferences on how to organize files. I recommend making at least two three folders in your home in addition to sub-folders within your projects directory as we add new projects. Really it doesn't matter how you do this, as long as your are organized and understand your own setup. For the purposes of this class, it is easiest for discussion if we are all operating under the same setup.
+Organization is a really difficult thing in computational biology, and everyone has their own preferences. I recommend making at least two three folders in your home in addition to sub-folders within your projects directory as we add new projects. Really it doesn't matter how you do this, as long as your are organized, understand your own setup and communicate that to others who may be involved in your projects. For the purposes of this class, it is easiest for discussion if we are all operating under the same setup.
 
 Make **3 directories in your home directory named scripts, projects and raw_data**
 
@@ -317,9 +326,9 @@ Make **3 directories in your home directory named scripts, projects and raw_data
 
 ## Making softlinks
 
-Softlinks are a great way to easily access files without copying the entire thing into a new directory. Copying files uses a lot of unnecessary space, but sometimes it is annoying to have to give the full path of a filename every time you want to use it. To get around this, we make a softlink which is a pointer to the real file that you can put wherever you want that doesn't require the space of the full file. Since we will be using scratch a lot, we are going to make a softlink to that file in our home.
-To make a softlink:
+Softlinks are a great way to easily access files without copying the entire thing into a new directory. Copying files uses a lot of unnecessary space, but sometimes it is annoying to have to give the full path of a filename every time you want to use it. To get around this, we make a "softlink" to the real file. A softlink is a pointer to the file doesn't require the space of the full file. Since we will be using our `scratch` directory a lot, we are going to make a softlink to that file in our home.
 
+To make a softlink:
 
 `ln -s sourcefilename destination`
 
