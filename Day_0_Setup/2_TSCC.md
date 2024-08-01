@@ -19,9 +19,9 @@ We have set up training accounts for you to use on TSCC. This two step guide wil
 - **For Linux users**: `Applications - System tools - Terminal`
 - **For Windows users** who followed the instructions in the previous notebook: `Start - Applications - Ubuntu`
 
-# 2) Log-in
+# 2) Log in
 
-In order to log-in to TSCC, you will need to use two-factor authentication via DUO. See [this guide](https://support.ucsd.edu/services?id=kb_article_view&sys_kb_id=dba41d798776d11c947a0fa8cebb3527&sysparm_article=KB0020168) to get this set-up on one of yor devices.
+In order to log in to TSCC, you will need to use two-factor authentication via DUO. See [this guide](https://support.ucsd.edu/services?id=kb_article_view&sys_kb_id=dba41d798776d11c947a0fa8cebb3527&sysparm_article=KB0020168) to get this set-up on one of yor devices.
 
 Once DUO is set-up, use the following command to login to TSCC, replacing `<your_username>` with your username (e.g. etrain82): 
 ```bash
