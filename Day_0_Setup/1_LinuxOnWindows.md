@@ -8,7 +8,7 @@
 
 # <div align="center"><b>Glancing Through the Windows: Setting up a Linux terminal on a Windows machine</b></div>
 
-If you are working on a machine that runs a Windows operating system, you don't have a built-in Linux terminal. This terminal is the interface to data and programs most commonly used in Bioinformatics and the one we will be using in this course.
+If you are working on a machine that runs a Windows operating system, you don't have a built-in Linux terminal. If you don't know what this is, don't worry about it for now. Just know that it is the interface to the data and programs most commonly used in bioinformatics and the one we will be using most frequently in this course.
 
 This is a quick start guide to set up a Linux terminal on your machine through [Ubuntu](https://ubuntu.com/desktop/wsl).
 
