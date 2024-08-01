@@ -10,9 +10,7 @@
 
 If you are working on a machine that runs a Windows operating system, you don't have a built-in Linux terminal. If you don't know what this is, don't worry about it for now. Just know that it is the interface to the data and programs most commonly used in bioinformatics and the one we will be using most frequently in this course.
 
-This is a quick start guide to set up a Linux terminal on your machine through [Ubuntu](https://ubuntu.com/desktop/wsl).
-
-If you are using a Mac or Linux machine, you can skip this step and move on to the next one.
+This is a quick start guide to set up a Linux terminal on your machine through [Ubuntu](https://ubuntu.com/desktop/wsl). If you are using a Mac or Linux machine, you can skip this step.
 
 # Step 1: Ubunt-Who?
 
