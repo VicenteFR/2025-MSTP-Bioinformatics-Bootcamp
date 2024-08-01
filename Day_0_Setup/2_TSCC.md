@@ -6,9 +6,9 @@
 
 # <div align="center"><b>Logging in to the Triton Shared Computing Cluster (TSCC)</b></div>
 
-Many bioinformatic analyses involve working with data or algorithms that require more computational resources than are available on a personal computer. In this scenario, it is common to use a high-performance computing (HPC) cluster to run analyses. 
+Much of bioinformatics involves working with data or algorithms that require more computational resources than available on a personal computer (PC). In this scenario, it is common to use a high-performance computing (HPC) cluster. 
 
-The [Triton Shared Computing Cluster (TSCC)](https://www.sdsc.edu/support/user_guides/tscc.html) is a popular HPC cluster on campus that is used by many research groups. 
+The [Triton Shared Computing Cluster (TSCC)](https://www.sdsc.edu/support/user_guides/tscc.html) is an HPC cluster on campus that is used by many research groups. 
 
 
 We have set up training accounts for you to use on TSCC. This two step guide will walk you through the steps to log in to TSCC and access your training account.
