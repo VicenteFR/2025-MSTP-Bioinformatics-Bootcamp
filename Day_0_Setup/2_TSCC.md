@@ -93,7 +93,9 @@ Pro tips will appear in outlined boxes that look like this:
 
 ### In your local pc open or create this file: `~/.ssh/config`
 
-Type the following command exactly as it appears below, then press Enter: `vi ~/.ssh/config`
+Exit TSCC (so that you are back on your local machine), then type the following command exactly as it appears below followed by enter: 
+
+`vi ~/.ssh/config`
 
 Copy and paste the following into the terminal. Make sure that the entire thing gets copied and pasted.
 ```bash
