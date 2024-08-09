@@ -99,6 +99,12 @@ Finally, Miniconda will ask if you want to run `conda init` to configure your ac
 Time to check if this worked. Type:
     
 ```bash
+source ~/.bashrc
+```
+
+Followed by:
+
+```bash
 conda --version
 ```
 
