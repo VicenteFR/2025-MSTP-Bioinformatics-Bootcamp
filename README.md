@@ -5,7 +5,7 @@ Welcome to the course website for 2024 MSTP Bioinformatics Bootcamp!<br />
 
 ## Course Information
 
-**When**: Aug 12-Aug 16 ; 8AM-12PM PDT
+**When**: Aug 12-Aug 16; 8AM-12PM PDT
 
 **Where**: Medical Education and Telemedicine Building (MET) 304
 
