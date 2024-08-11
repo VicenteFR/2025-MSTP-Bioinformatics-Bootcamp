@@ -84,7 +84,7 @@ When you are done with your Jupyter notebook session, you can close the tab in y
     &#128218; Pro Tip: Use VSCode
   </h2>
   <p style="color: #1B5E20; font-family: Arial, sans-serif;">
-    [Visual Studio Code (VSCode)](https://code.visualstudio.com/)  is an alternative IDE to JupyterLab developed by Microsoft. JupyterLab is an excellent IDE, but is missing some features that VSCode has including a built-in terminal, git integration, and a more robust debugger, GitHub copilot, and a more navigatible file explorer. We can connect to the same Jupyter notebook session using VSCode, but it takes a few extra steps. The following will guide you to getting VSCode working and connected to your Jupyter notebook session.
+  <a href="https://code.visualstudio.com/" style="color: #337ab7;"> Visual Studio Code</a> (VSCode) is an alternative IDE to JupyterLab developed by Microsoft. JupyterLab is an excellent IDE, but is missing some features that VSCode has including a built-in terminal, git integration, and a more robust debugger, GitHub copilot, and a more navigatible file explorer. We can connect to the same Jupyter notebook session using VSCode, but it takes a few extra steps. The following will guide you to getting VSCode working and connected to your Jupyter notebook session.
   </p>
 </div>
 
