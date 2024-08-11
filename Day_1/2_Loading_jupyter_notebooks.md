@@ -79,4 +79,53 @@ When you are done with your Jupyter notebook session, you can close the tab in y
 
 ---
 
-# PRO  TIP: Uuse vscode
+<div style="border: 2px solid #4CAF50; padding: 15px; border-radius: 10px; background-color: #e8f5e9;">
+  <h2 style="color: #388E3C; font-family: Arial, sans-serif;">
+    &#128218; Pro Tip: Use VSCode
+  </h2>
+  <p style="color: #1B5E20; font-family: Arial, sans-serif;">
+    [Visual Studio Code (VSCode)](https://code.visualstudio.com/)  is an alternative IDE to JupyterLab developed by Microsoft. JupyterLab is an excellent IDE, but is missing some features that VSCode has including a built-in terminal, git integration, and a more robust debugger, GitHub copilot, and a more navigatible file explorer. We can connect to the same Jupyter notebook session using VSCode, but it takes a few extra steps. The following will guide you to getting VSCode working and connected to your Jupyter notebook session.
+  </p>
+</div>
+
+Start by downloading the appropriate distribution of VSCode for your operating system here from [here](https://code.visualstudio.com/download).
+
+Run the VSCode installer and open the program. You should see a welcome screen like this:
+
+![vscode_home](../static/Day_1/vscode_home.png)
+
+Select the extensions icon on the left side of the screen (red box). This will open the extensions marketplace. Search for the `Jupyter` extension and install it. This will allow you to connect to Jupyter notebooks from within VSCode. Also install  the "Remote - SSH" extension. I'd also recommend installing the "Python" and "Pylance" extensions at this point.
+
+Play a round with VSCode a bit to get a feel and read up on the documentation.
+
+Once you are somewhat comfortable with the interface, open the command palette by pressing `Ctrl+Shift+P` and type `Remote-SSH: Open SSH Configuration File...`. Select `~/ssh/config` from the list. This will open a file called `config` in a new tab. Add the following lines to the file:
+
+```bash
+Host tscc
+
+  HostName login.tscc.sdsc.edu  
+  
+  User aklie  
+  
+  ControlPath ~/.ssh/%r@%h:%p  
+          ControlMaster auto  
+          ControlPersist 10  
+```
+
+Save the file and close it. 
+
+Open a separate terminal from VSCode and log into TSCC as described in the [previous section](../Day_0_Setup/2_TSCC.md). 
+
+Once you are logged in, open the command palette again and type `Remote-SSH: Connect to Host...`. Select `tscc` from the list.
+
+If all goes well, you should see `SSH: tscc` in the bottom left corner of the screen:
+
+![connected_tscc](../static/Day_1/connected_tscc.png)
+
+Now create a new file and call it `test_vscode.ipynb`. Open the file and you should see a Jupyter notebook interface:
+
+![click_kernel](../static/Day_1/click_kernel.png)
+
+Click `Select Kernel` on the top right (red box) then `Existing Jupyter Server` . Then select `Enter the URL of the running Jupyter server` and paste the URL from the Jupyter notebook session you started with `galyleo`. Give it a name (I use the default) and press enter. You should now be connected to the Jupyter notebook session you started with `galyleo`!
+
+You can now run code in the notebook and see the output in the VSCode terminal the same way you would in JupyterLab. As we go through bootcamp, try using both VSCode and JupyterLab to do the analyses to see which you prefer.
