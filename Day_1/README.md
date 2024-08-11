@@ -10,6 +10,6 @@
 
 ## Slides for Day 1:
 
-Slides for Day 1 will be posted here after Day 1: TODO
+Slides for Day 1 will be posted here:
 
 If you run into any issues or have any questions/concerns feel free to shoot me an email: aklie@ucsd.edu
