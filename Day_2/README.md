@@ -1,11 +1,11 @@
 # Bootcamp Day 2
 
 ## Goals for Day 2:
-- [] **Submitting jobs to TSCC and bash scripting**
-- [] **Downloading and QCing sequencing data**
+- [ ] **Submitting jobs to TSCC and bash scripting**
+- [ ] **Downloading and QCing sequencing data**
     - SRA and GEO
     - FastQC
-- [] **Sequence alignment to the reference genome**
+- [ ] **Sequence alignment to the reference genome**
     - Alignment with STAR
     - SAM/BAM files
 
