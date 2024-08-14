@@ -8,7 +8,7 @@
   - Installing software
 - [X] **Genomics: from sample to sequence**
 
-## Slides for Day 1:
+## Resources for Day 1:
 
 Slides for Day 1 will be posted here: https://docs.google.com/presentation/d/1AwYOtikPHr1GnPeedCDeGyRpgBNmESWkaVZfDqqYVwA/edit#slide=id.p
 
