@@ -192,6 +192,6 @@ STAR --runThreadN 16 --genomeDir ~/scratch/annotations/hg19/star --readFilesIn ~
 ```
 
 # DONE!
-When finished, it's time to do the script submission thing. So go ahead and unleash the `qsub star_align.sh`. Congratulations - you are now a full-fledged bio-stronomer (or rock-STAR if you prefer)!🌟
+When finished, it's time to do the script submission thing. So go ahead and unleash the `sbatch star_align.sh`. Congratulations - you are now a full-fledged bio-stronomer (or rock-STAR if you prefer)!🌟
 
  ---
