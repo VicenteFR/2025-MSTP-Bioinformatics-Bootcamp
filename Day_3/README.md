@@ -1,16 +1,10 @@
 # Bootcamp Day 3
 
-Process alignments with samtools
-View alignments with the integrative genome viewer
-Gene abundance quantification
-Intro to Python + normalization
-
-
 ## Goals for Day 3:
-- [ ] **Processing alignments with samtools**
-- [ ] **Viewing alignments with the integrative genome viewer**
-- [ ] **Gene abundance quantification**
-- [ ] **Intro to Python + normalization**
+- [X] **Processing alignments with samtools**
+- [X] **Viewing alignments with the integrative genome viewer**
+- [X] **Gene abundance quantification**
+- [X] **Intro to Python + normalization**
 
 ## Resources for Day 3:
 
