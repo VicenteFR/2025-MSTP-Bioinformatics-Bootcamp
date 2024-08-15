@@ -1,7 +1,7 @@
 # Bootcamp Day 4
 
 ```bash
-ssh <your_username?@login.tscc.sdsc.edu
+ssh <your_username>@login.tscc.sdsc.edu
 bash
 conda activate 2024-mstp-bootcamp
 module load galyleo
@@ -18,7 +18,7 @@ galyleo launch --account htl191 --cpus 1 --memory 8 --time-limit 4:00:00 --parti
 
 ## Resources for Day 4:
 
-Slides for Day 4 will be posted here: 
+Slides for Day 4 will be posted here: https://docs.google.com/presentation/d/1zYyQI3UWhiu0v_HgtOj2FAgKm3AZonB1rILWBKNWQzA/edit?usp=sharing
 
 Video recording for Day 4 will be posted here
 
