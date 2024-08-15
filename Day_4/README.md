@@ -3,7 +3,6 @@
 ```bash
 ssh <your_username>@login.tscc.sdsc.edu
 bash
-conda activate 2024-mstp-bootcamp
 module load galyleo
 galyleo launch --account htl191 --cpus 1 --memory 8 --time-limit 4:00:00 --partition hotel --qos hotel
 ```
