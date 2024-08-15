@@ -13,6 +13,8 @@ galyleo launch --account htl191 --cpus 1 --memory 8 --time-limit 4:00:00 --parti
 - [ ] DESeq2 differential expression analysis
 - [ ] Pathway analysis with DecoupleR-py
 - [ ] AI and bioinformatics
+- [ ] Prep for gene pattern workshop: https://docs.google.com/document/d/1UOLoytKVHZ7vCDKL98Q1bTADlD2KB_FNC119wobVOcQ/edit
+- [ ] Post-bootcamp survey: https://forms.gle/D4fRmxTVy1KKpSZq5
 
 ## Resources for Day 4:
 
