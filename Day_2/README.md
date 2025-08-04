@@ -11,8 +11,8 @@
 
 ## Resources for Day 2:
 
-Slides for Day 2 will be posted here: https://docs.google.com/presentation/d/1fF97XXic4ehJyM9FdRGduavaNUyASP_z0LOWgEI3FUc/edit?usp=sharing
+Slides for Day 2 will be posted here.
 
-Video recording for Day 2 will be posted here: https://drive.google.com/file/d/1Ql2aysubQxjNf_78HI6eXcflTCdbDN9K/view?usp=drive_link
+Video recording for Day 2 will be posted here.
 
-If you run into any issues or have any questions/concerns feel free to shoot me an email: aklie@ucsd.edu
+If you run into any issues or have any questions/concerns feel free to shoot me an email: vfajardorosas@ucsd.edu

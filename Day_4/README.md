@@ -17,8 +17,8 @@ galyleo launch --account htl191 --cpus 1 --memory 8 --time-limit 4:00:00 --parti
 
 ## Resources for Day 4:
 
-Slides for Day 4 will be posted here: https://docs.google.com/presentation/d/1zYyQI3UWhiu0v_HgtOj2FAgKm3AZonB1rILWBKNWQzA/edit?usp=sharing
+Slides for Day 4 will be posted here.
 
-Video recording for Day 4 will be posted here: https://drive.google.com/file/d/162-Xmx1PFyfgCXUmMq82qv4WBsa1DrB5/view?usp=drive_link
+Video recording for Day 4 will be posted here.
 
-If you run into any issues or have any questions/concerns feel free to shoot me an email: aklie@ucsd.edu
+If you run into any issues or have any questions/concerns feel free to shoot me an email: vfajardorosas@ucsd.edu

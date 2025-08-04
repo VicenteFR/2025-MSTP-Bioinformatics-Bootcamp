@@ -20,11 +20,11 @@ Questions or concerns? Feel free to send along an email.
 | Day  | Date | Topic | Links | Homework |
 | ------------- | ------------- |------------- |------------- |------------- |
 | 0 | **BEFORE** 08/18/2025  | **Setup**: *"Shall We Begin?"*  | [Day_0](Day_0_Setup) | [Pre-Bootcamp Survey](https://forms.gle/f7Cezv812vdTRiyV7)<br />[Install Ubuntu (only if Windows user)](Day_0_Setup/1_LinuxOnWindows.md)<br />[Log in to TSCC](Day_0_Setup/2_TSCC.md)<br />[Installations](Day_0_Setup/3_Installations.md) |
-| 1  | 08/18/2024  | **Module 1**: Bootcamp prep and genomics overview  | [Day_1](Day_1)  | Read [Hangauer et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5933935/)| 
-| 2  | 08/19/2024  | **Module 2**: QCing and Aligning sequencing reads | [Day_2](Day_2) |  |
-| 3  | 08/20/2024  | **Module 3**: Alignment viz and quantification  | [Day_3](Day_3) |  |
-| 4  | 08/21/2024  | **Module 4**: Downstream analysis in Python (DEGs, DESeq2)  | [Day_4](Day_4) | [Prep for GenePattern workshop](https://docs.google.com/document/d/1UOLoytKVHZ7vCDKL98Q1bTADlD2KB_FNC119wobVOcQ/edit)<br />[Post-Bootcamp Survey](https://forms.gle/D4fRmxTVy1KKpSZq5) |
-| 5  | 08/22/2024  | **Module 5**: GenePattern Workshop  | [Day_5](Day_5)  |  |
+| 1  | 08/18/2025  | **Module 1**: Bootcamp prep and genomics overview  | [Day_1](Day_1)  | Read [Hangauer et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5933935/)| 
+| 2  | 08/19/2025  | **Module 2**: QCing and Aligning sequencing reads | [Day_2](Day_2) |  |
+| 3  | 08/20/2025  | **Module 3**: Alignment viz and quantification  | [Day_3](Day_3) |  |
+| 4  | 08/21/2025  | **Module 4**: Downstream analysis in Python (DEGs, DESeq2)  | [Day_4](Day_4) | [Prep for GenePattern workshop](https://docs.google.com/document/d/1UOLoytKVHZ7vCDKL98Q1bTADlD2KB_FNC119wobVOcQ/edit)<br />[Post-Bootcamp Survey](https://forms.gle/D4fRmxTVy1KKpSZq5) |
+| 5  | 08/22/2025  | **Module 5**: GenePattern Workshop  | [Day_5](Day_5)  |  |
 
 ## Bioinformatics Resources
 

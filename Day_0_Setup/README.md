@@ -10,4 +10,4 @@ To make sure we don't spend the whole first day troubleshooting, we will to do s
 ## 3. Install Software
 - Finally, you will need to install several programs: [3_Installations.md](3_Installations.md)
 
-If you run into any issues or have any questions/concerns feel free to shoot me an email: aklie@ucsd.edu
+If you run into any issues or have any questions/concerns feel free to shoot me an email: vfajardorosas@ucsd.edu
