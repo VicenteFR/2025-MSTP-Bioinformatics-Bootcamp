@@ -1,17 +1,17 @@
-# 2024 MSTP Bioinformatics Bootcamp
-Welcome to the course website for 2024 MSTP Bioinformatics Bootcamp!<br />
+# 2025 MSTP Bioinformatics Bootcamp
+Welcome to the course website for 2025 MSTP Bioinformatics Bootcamp!<br />
 
 ![HomeImage](https://imgs.xkcd.com/comics/dna.png)
 
 ## Course Information
 
-**When**: Aug 12-Aug 16; 8AM-12PM PDT
+**When**: Aug 18—Aug 22; 8AM-12PM PDT
 
-**Where**: Medical Education and Telemedicine Building (MET) 304
+**Where**: Medical Education and Telemedicine Building (MET) 315
 
 **Instructor**: [Hannah Carter](https://carterlab.info/) (hkcarter@health.ucsd.edu)
 
-**TA**: [Adam Klie](.com/adamklie) (aklie@ucsd.edu)
+**TA**: Vicente Fajardo Rosas (vfajardorosas@ucsd.edu)
 
 Questions or concerns? Feel free to send along an email.
 
@@ -19,12 +19,12 @@ Questions or concerns? Feel free to send along an email.
 
 | Day  | Date | Topic | Links | Homework |
 | ------------- | ------------- |------------- |------------- |------------- |
-| 0 | **BEFORE** 08/12/2024  | **Setup**: *"Shall We Begin?"*  | [Day_0](Day_0_Setup) | [Pre-Bootcamp Survey](https://forms.gle/f7Cezv812vdTRiyV7)<br />[Install Ubuntu (only if Windows user)](Day_0_Setup/1_LinuxOnWindows.md)<br />[Log in to TSCC](Day_0_Setup/2_TSCC.md)<br />[Installations](Day_0_Setup/3_Installations.md) |
-| 1  | 08/12/2024  | **Module 1**: Bootcamp prep and genomics overview  | [Day_1](Day_1)  | Read [Hangauer et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5933935/)| 
-| 2  | 08/13/2024  | **Module 2**: QCing and Aligning sequencing reads | [Day_2](Day_2) |  |
-| 3  | 08/14/2024  | **Module 3**: Alignment viz and quantification  | [Day_3](Day_3) |  |
-| 4  | 08/15/2024  | **Module 4**: Downstream analysis in Python (DEGs, DESeq2)  | [Day_4](Day_4) | [Prep for GenePattern workshop](https://docs.google.com/document/d/1UOLoytKVHZ7vCDKL98Q1bTADlD2KB_FNC119wobVOcQ/edit)<br />[Post-Bootcamp Survey](https://forms.gle/D4fRmxTVy1KKpSZq5) |
-| 5  | 08/16/2024  | **Module 5**: GenePattern Workshop  | [Day_5](Day_5)  |  |
+| 0 | **BEFORE** 08/18/2025  | **Setup**: *"Shall We Begin?"*  | [Day_0](Day_0_Setup) | [Pre-Bootcamp Survey](https://forms.gle/f7Cezv812vdTRiyV7)<br />[Install Ubuntu (only if Windows user)](Day_0_Setup/1_LinuxOnWindows.md)<br />[Log in to TSCC](Day_0_Setup/2_TSCC.md)<br />[Installations](Day_0_Setup/3_Installations.md) |
+| 1  | 08/18/2024  | **Module 1**: Bootcamp prep and genomics overview  | [Day_1](Day_1)  | Read [Hangauer et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5933935/)| 
+| 2  | 08/19/2024  | **Module 2**: QCing and Aligning sequencing reads | [Day_2](Day_2) |  |
+| 3  | 08/20/2024  | **Module 3**: Alignment viz and quantification  | [Day_3](Day_3) |  |
+| 4  | 08/21/2024  | **Module 4**: Downstream analysis in Python (DEGs, DESeq2)  | [Day_4](Day_4) | [Prep for GenePattern workshop](https://docs.google.com/document/d/1UOLoytKVHZ7vCDKL98Q1bTADlD2KB_FNC119wobVOcQ/edit)<br />[Post-Bootcamp Survey](https://forms.gle/D4fRmxTVy1KKpSZq5) |
+| 5  | 08/22/2024  | **Module 5**: GenePattern Workshop  | [Day_5](Day_5)  |  |
 
 ## Bioinformatics Resources
 
@@ -33,11 +33,8 @@ Questions or concerns? Feel free to send along an email.
 [Bioinformatics Algorithms: An Active Learning Approach (YouTube)](https://www.youtube.com/c/bioinfalgorithms/featured)<br>
 
 ### Recommended UCSD Courses:
-**BIOM262 Quantitative Methods/Genetics** - Several notebooks were taken/adapted from this course and I recommend it if you want an introduction to bioinformatics methods.<br>
+**BIOM262 Quantitative Methods/Genetics** - Several notebooks were taken and adapted from this course and we recommend it if you'd like to have a broad introduction to bioinformatics methods.<br>
 **CSE284 Personal Genomics/Bioinformatics** - This is an invaluable course (focusing on personal genomics) that blends theory and application seamlessly. Information from this course also made its way into bootcamp. <br>
-**CSE258 Recommender Systems & Web Mining** - This course is focused on machine learning applications (primarily in Python), while also providing some introductory theory. This is a great course to get your feet wet in the ocean of ML.<br>
+**CSE258 Recommender Systems & Web Mining** - This course is focused on machine learning applications (primarily in Python), while providing some introductory theory. This is a great course to get your feet wet in the ocean of ML.<br>
 **BNFO286 Network Biology & Biomedicine**<br>
 **MED278 Cancer Genomics Journal Club**<br>
-
-
-
