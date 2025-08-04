@@ -1,6 +1,7 @@
 <div style="border: 2px dashed #6c757d; padding: 10px; border-radius: 10px; background-color: #f8f9fa; text-align: left; margin-bottom: 20px;">
   <p style="font-size: 18px; color: #343a40; font-family: 'Courier New', Courier, monospace;">
-    <strong>@author:</strong> Adam Klie
+    <strong>@author:</strong> Adam Klie<br>
+    <strong>@adapted by:</strong> Vicente Fajardo Rosas for 2025 class.
   </p>
 </div>
 
@@ -109,8 +110,8 @@ User etrain82
 
 ControlPath ~/.ssh/%r@%h:%p  
         ControlMaster auto  
-        ControlPersist 10  
+        ControlPersist 20
 ```
-Make sure to swap out `etrain82` with your username that I provided to you.
-
-Type `:wq` to save the file and exit.
+Make sure to swap out `etrain82` with your username that I provided to you. Type `:wq` to save the file and exit.<br />
+<br />
+Now you can ssh connect to the server by simply typing: `ssh tscc`. The very first time, you will be prompted to enter your password and DUO authenticate. However, for the subsequent 20 connections (as controled by option `ControlPersist`), you will connect automatically without verification.
