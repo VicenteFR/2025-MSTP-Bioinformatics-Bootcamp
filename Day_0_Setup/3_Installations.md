@@ -132,20 +132,6 @@ In base, we will need something called Jupyter notebooks for later in the bootca
 conda install -c conda-forge jupyter jupyterlab -y
 ```
 
-<div style="border: 2px solid #4CAF50; padding: 15px; border-radius: 10px; background-color: #e8f5e9;">
-  <h2 style="color: #388E3C; font-family: Arial, sans-serif;">
-    &#128218; Pro Tip
-  </h2>
-  <p style="color: #1B5E20; font-family: Arial, sans-serif;">
-    Up until recently, conda performance was painfully slow. This has since been remedied to some extent, but I'm not sure if it's been fixed entirely. A much faster alternative to conda is a package manager called <a href="https://mamba.readthedocs.io/">mamba</a> that is a drop-in replacement for conda.
-    <br><br>
-    <strong>To install mamba on an existing installation of conda, use the following:</strong>
-    <br>
-    <code>conda install -n base --override-channels -c conda-forge mamba 'python_abi=*=*cp*'</code>
-    Once installed you can replace <code>conda</code> with <code>mamba</code> in any future command.
-  </p>
-</div>
-
 # 5. Creating an environment for running an `rna-seq` analysis
 
 During bootcamp, we will be honing our bioinformatic skills using an RNA-seq analysis. We will get more into the details in the first couple days, but for now, we need to install some software.
