@@ -49,7 +49,7 @@ To exit TSCC, type `exit` and press enter. You can alos use `CTRL + D`.
 It may be useful for TAs to have admin access to your account for troubleshooting purposes. Run the following command to grant that access:
 
 ```bash
-chmod -R o+rx /tscc/nfs/home/<your_username>
+chmod -R g+rx /tscc/nfs/home/<your_username>
 ```
 
 Again replacing `<your_username>` with your provided username.
