@@ -10,40 +10,43 @@ Open the STAR user [manual](https://github.com/alexdobin/STAR/blob/master/doc/ST
 
 Open UCSC genome [browser](https://genome.ucsc.edu/). The link to the specific annotations we will use is provided below, but first take a look through the website to see all the available annotations and features. We will briefly go through this together. We will use UCSC to download the **chromosome fasta files** that are needed to build the STAR index. Use the wget command followed by a copy of the web link address to download the files to TSCC. The annotations are located [here](http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/). Scroll to the bottom of the page and get the link for **chromFa.tar.gz**. Once you have made a folder on your TSCC account, move into it so your annotations will land in the proper place during downloading.
 
-
-`cd ~/scratch`
-
-`mkdir annotations`
-
-`cd annotations`
-
-`mkdir hg19`
-
-`cd ~/scratch/annotations/hg19/`
-
-`wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.gz`
+```bash
+cd ~/scratch
+mkdir annotations
+cd annotations
+mkdir hg19
+cd ~/scratch/annotations/hg19/
+wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.gz
+```
 
 This will download a zipped file that you will proceed to unzip with:
 
-`tar -xvf chromFa.tar.gz`
+```bash
+tar -xvf chromFa.tar.gz
+```
 
-Unfortunately this downloads EVERYthing and we only want the chr#.fa files. Let's check how many files we actually have:
+Unfortunately this downloads everything and we only want the chr#.fa files. Let's check how many files we actually everye:
 
-`ls | wc -l`<br>
-`94`
+```bash
+ls | wc -l
+```
+```plaintext
+94
+```
 
 We will remove the unneeded files in this directory with `rm`. To remove more than one file at a time you have to use the `-r` flag (recursive). Remember you can use the star character to remove all things that contain common characters. For example:
 
-`rm -r *random*`
-
-`rm -r *chrUn*`
-
-`rm -r *hap*`
+```bash
+rm -r *random*
+rm -r *chrUn*
+rm -r *hap*
+```
 
 Once the folder is clean and contains only one fasta file per chromosome (and the original tar.gz file), you can merge them all together using `cat` and assign the output to a new file called allchrom.fa using `>`. This is the chromosome fasta file that you will need to use to generate the genome index.
 
-
-`cat *.fa > allchrom.fa`
+```bash
+cat *.fa > allchrom.fa
+```
 
 *NOTE - the > character saves the result of your command to a new file.*
 
@@ -51,13 +54,16 @@ Once the folder is clean and contains only one fasta file per chromosome (and th
 
 We will use gencode release (19) for genome build GRCh37 (hg19). We want the gtf file of the comprehensive gencode annotation for chromosomes. 
 
-`cd ~/scratch/annotations/hg19/`
-
-`wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf.gz`
+```bash
+cd ~/scratch/annotations/hg19/
+wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf.gz
+```
 
 Unzip the compressed "wgot" file with gunzip:
 
-`gunzip gencode.v19.annotation.gtf.gz`
+```bash
+gunzip gencode.v19.annotation.gtf.gz
+```
 
 *Note the different compression formats. This file was gzipped so it needs to unzipped with gunzip. The fasta files were tar compressed and required tar -xvf to unzip*.
 
@@ -67,18 +73,24 @@ Before we begin scriptifying things we need to make a **<span style="color:red">
 
 We can easily construct this from our current path with the following:
 
-`mkdir star`
+```bash
+mkdir star
+```
 
 STAR requires a lot of processing power, we are going to submit this command as a job to the cluster. Remember that handy fake submission script we made (at the end of Introduction_to_bash_scripting.ipynb)? Let's use it here by copying and updating the necessary parameters:
 
 `cd ~/scripts` <-- If this causes an error it likely means either that you did not make a scripts folder from your home directory, or you made your scripts folder somewhere else. To make a scripts folder from your home directory do the following before rerunning the above command: 
 
-`cd`<br>
-`mkdir scripts`
+```bash
+cd
+mkdir scripts
+```
 
 Now copy our fake script into that directory with a new, meaningful name such as star_generate_index.sh
 
-`cp ~/fake_script.sh ~/scripts/star_generate_index.sh`
+```bash
+cp ~/fake_script.sh ~/scripts/star_generate_index.sh
+```
 
 For this script, we will use a time limit of 3 hours, 1 node, and 16 processors.
 
@@ -86,7 +98,9 @@ Use the STAR manual to decide how your STAR command should look like. Once you h
 
 In case you are lost here is what I did:
 
-`mkdir ~/scratch/annotations/hg19/star`
+```bash
+mkdir ~/scratch/annotations/hg19/star
+```
 
 ```bash
 #!/bin/bash
@@ -108,10 +122,9 @@ STAR --runThreadN 16 --runMode genomeGenerate --genomeDir ~/scratch/annotations/
 First make sure the conda environment with STAR in it is activated:
 
 ```bash
-conda activate 2024-mstp-bootcamp
+conda activate 2025-mstp-bootcamp
+sbatch star_generate_index.sh
 ```
-
-`sbatch star_generate_index.sh`
 
 This will take a little while to complete (**ETA**: 15 min). If successful your out file, *star_generate_index.out*, should look something like this: <br><br>
 
@@ -136,7 +149,9 @@ Aug 07 12:06:26 ..... finished successfully
 
 ## 1d) Check the status of your job
 
-`squeue -u <your_username>`
+```bash
+squeue -u [your_username]
+```
 
 Take a look at the status (The column labeled S). Q means your job is in the queue and has not started yet. R means your job is running (you will see the time updated according to how long it has been running). C means your job is complete.
 
@@ -151,7 +166,9 @@ If you have an error with your job, see if you can understand the error and try 
 `EXITING: FATAL INPUT ERROR: unrecoginzed parameter name "sjdbGTFFile" in input "Command-Line-Initial"
 SOLUTION: use correct parameter name (check the manual)`
 
-`Jul 21 14:19:02 ...... FATAL ERROR, exiting`
+```bash
+Jul 21 14:19:02 ...... FATAL ERROR, exiting
+```
 
 In this case, you would go back and change the typo. The second **F** should not be capitalized.
 
@@ -159,12 +176,15 @@ In this case, you would go back and change the typo. The second **F** should not
 
 Again let's make a folder for the output of our alignments:
 
-`mkdir ~/scratch/star_alignment`
+```bash
+mkdir ~/scratch/star_alignment
+```
 
 Once your genome index job is complete, you can move onto the next step of mapping your reads to the genome. Again you can copy your `fake_script.sh` file and make the necessary changes for this particular job submission.
 
-
-`cp ~/fake_script.sh ~/scripts/star_align.sh`
+```bash
+cp ~/fake_script.sh ~/scripts/star_align.sh
+```
 
 Using the STAR manual, try to write out the command for mapping reads. If you don't like a challenge though I'll be magnanimous and elucidate the esoteric thus allowing you to embrace your inner-astronomer and go STAR-gazing:
 
@@ -192,6 +212,7 @@ STAR --runThreadN 16 --genomeDir ~/scratch/annotations/hg19/star --readFilesIn ~
 ```
 
 # DONE!
-When finished, it's time to do the script submission thing. So go ahead and unleash the `sbatch star_align.sh`. Congratulations - you are now a full-fledged bio-stronomer (or rock-STAR if you prefer)!🌟
+When finished, it's time to do the script submission thing. So go ahead and unleash the `sbatch star_align.sh`.<br>
+Congratulations! You are now a full-fledged bio-stronomer (or rock-STAR if you prefer)!🌟
 
  ---

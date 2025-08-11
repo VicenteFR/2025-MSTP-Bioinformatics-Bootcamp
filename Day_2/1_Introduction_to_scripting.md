@@ -1,7 +1,7 @@
 <div style="border: 2px dashed #6c757d; padding: 10px; border-radius: 10px; background-color: #f8f9fa; text-align: left; margin-bottom: 10px;">
   <p style="font-size: 18px; color: #343a40; font-family: 'Courier New', Courier, monospace;">
     <strong>@author:</strong> James V. Talwar<br>
-    <strong>@adapted by:</strong> Adam Klie for 2024 Class
+    <strong>@adapted by:</strong> Vicente Fajardo Rosas for 2025 Class
   </p>
 </div>
 
@@ -21,35 +21,44 @@ If you've forgotten how to log onto TSCC, please refer to the [TSCC tutorial](..
 
 Create a new text file with `vi`:
 
-`vi test.sh`
+```bash
+vi test.sh
+```
 
 Within the file, print a string that says `"Hello, world!"` using `echo`
 
-`i`
-
-`echo "Hello, world!"`
-
-`esc`
-
-`:wq!`
+```bash
+<i>
+echo "Hello, world!"
+<esc>
+<:wq!>
+```
 
 Now we will run the script using:
 
-`bash test.sh`
+```bash
+bash test.sh
+```
 
 If your script ran sucessfully, you will see `"Hello, world!"` printed in your terminal.
 
 When we included bash before the script name in the command above, we asked to use the bash interpreter to run our script. What happens if we don't include `bash`?
 
-`./test.sh`
+```
+./test.sh
+```
 
 Huh, you get the following error:
 
-`-bash: ./test.sh: Permission denied`
+```bash
+-bash: ./test.sh: Permission denied
+```
 
 In order to run a file directly, we need to change the permissions to allow the script to be executable for the user. **chmod** is a command that changes the permissions on a file and **+x** will add execute rights to the script.
 
-`chmod +x test.sh`
+```bash
+chmod u+x test.sh
+```
 
 Now try to run the script. Did it work?
 
@@ -66,11 +75,11 @@ As you might remember from installing programs in bootcamp set-up, sometimes we 
 
 Let's make a script with the basic structure of a cluster job script and walk through the details:
 
-`cd ~/`
-
-`vi fake_script.sh`
-
-`i`
+```bash
+cd ~/
+vi fake_script.sh
+<i>
+```
 
 ```bash
 #!/bin/bash
@@ -87,21 +96,24 @@ Let's make a script with the basic structure of a cluster job script and walk th
 echo "Hello, world!"
 ```
 
-`esc`
-
-`wq!`
+```bash
+<esc>
+<:wq!>
+```
 
 We can now submit the job to the cluster using the `sbatch` command:
 
-`sbatch fake_script.sh`
+```bash
+sbatch fake_script.sh
+```
 
 This will produce an output file called `fake_script.out` that contains the output of the script.
 
 You can learn about which submission parameters to include and what they do [here](https://www.sdsc.edu/support/user_guides/tscc.html).
 
-**Submitting your script**: sbatch [script]<br>
-**Checking status of your job**: squeue -u [username] <br>
-**Cancelling your job**: scancel [jobid] <br>
+**Submitting your script**: `sbatch [script]`<br>
+**Checking status of your job**: `squeue -u [username]` or `squeue -u ${USER}`<br>
+**Cancelling your job**: `scancel [jobid]` <br>
 
 # DONE!
 

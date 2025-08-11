@@ -32,7 +32,7 @@ Note that we don't have to install `galyleo` because it is already comes pre-ins
 It can then be run in much the same way as a interactive job on TSCC. Here is an example command:
 
 ```bash
-galyleo launch --account htl191 --cpus 1 --memory 4 --time-limit 1:00:00 --partition hotel --qos hotel
+galyleo launch --account htl191 --cpus 1 --memory 2G --time-limit 1:00:00 --partition hotel --qos hotel
 ```
 
 Let's break that down:
@@ -105,7 +105,7 @@ Host tscc
 
   HostName login.tscc.sdsc.edu  
   
-  User aklie  
+  User vfajardorosas  
   
   ControlPath ~/.ssh/%r@%h:%p  
           ControlMaster auto  
