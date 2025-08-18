@@ -234,7 +234,7 @@ This is where the `less` command comes in. To showcase its power, let's apply it
 ```bash
 cd ~
 pwd
-cp -R /tscc/nfs/home/hkcarter/toy_data
+cp -R /tscc/nfs/home/hkcarter/toy_data .
 ls
 ```
 
