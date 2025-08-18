@@ -10,6 +10,10 @@
 
 # Background
 
+We will first attempt to define and differentiate among Unix, the command line, Bash and the terminal. Although often used interchangeably, the reality is that albeit they are highly related to one another (as presented in the diagram below), they are different components of your computer.
+
+![image.png](../static/Day_1/SystemHierarchy.png)
+
 ## What is Unix?
 
 Unix is a widely used operating system developed in the late 1960s. Unix has been very influential in the development of many modern operating systems, including those underlying most Linux and Mac machines. In fact, you can think of these operating systems as variants of Unix.
