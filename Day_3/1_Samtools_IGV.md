@@ -46,7 +46,9 @@ This will create a file called `interesting_file.sorted.bam.bai` which is the in
 
 Let's put everything together in an automagical script.
 
-`cp ~/fake_script.sh ~/scripts/samtools.sh`
+```bash
+cp ~/fake_script.sh ~/scripts/samtools.sh
+```
 
 ```bash
 #!/bin/bash
@@ -62,18 +64,12 @@ Let's put everything together in an automagical script.
 
 cd ~/scratch/star_alignment
 
-for x in DMSO_1_ATCACGAligned.out DMSO_2_CGATGTAligned.out DTP_1_CAGATCAligned.out DTP_2_CCGTCCAligned.out DTP_3_GTGAAAAligned.out
-
-do
-
-echo "Beginning $x"
-
-samtools view -S -b $x.sam > $x.bam
-
-samtools sort -@ 8 -o $x.sorted.bam $x.bam
-
-samtools index $x.sorted.bam
-
+for x in DMSO_1_ATCACGAligned.out DMSO_2_CGATGTAligned.out DTP_1_CAGATCAligned.out DTP_2_CCGTCCAligned.out DTP_3_GTGAAAAligned.out; do
+    echo "Beginning $x"
+    samtools view -S -b $x.sam > $x.bam
+    samtools sort -@ 8 -o $x.sorted.bam $x.bam
+    samtools index $x.sorted.bam
+    echo -e "\n\n"
 done
 ```
 

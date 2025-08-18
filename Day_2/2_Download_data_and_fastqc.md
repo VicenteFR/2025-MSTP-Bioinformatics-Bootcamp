@@ -21,13 +21,14 @@ ls /tscc/nfs/home/hkcarter/fastq
 Rather than creating multiple copies of the data in each of your directories, we will make a softlink that simply points to the data:
 
 ```bash
+cd ~/
 ln -s /tscc/nfs/home/hkcarter/fastq ~/raw_data
 ```
 
 Let's see if our softlink worked.
 
 ```bash
-cd ~/raw_data
+cd ~/raw_data/fastq
 ls
 ```
 
@@ -55,15 +56,15 @@ head DMSO_1_ATCACG_L001_R1.fastq
 ```
 
 ```plaintext
-@SRR3955801.sra.1 DJB775P1:373:D1AP7ACXX:1:1101:1324:2072 length=50
+@SRR3955801.1 DJB775P1:373:D1AP7ACXX:1:1101:1324:2072 length=50
 NTATGATTCCTCCTAGTGCACAACCACCACGCACTCAAACACCACCTCTG
-+SRR3955801.sra.1 DJB775P1:373:D1AP7ACXX:1:1101:1324:2072 length=50
++SRR3955801.1 DJB775P1:373:D1AP7ACXX:1:1101:1324:2072 length=50
 #1:AB;BDHHHGHHIIEBEGGIIIIIGGIGGHGG<GHIIGAHIIHIGGGG
-@SRR3955801.sra.2 DJB775P1:373:D1AP7ACXX:1:1101:1268:2121 length=50
+@SRR3955801.2 DJB775P1:373:D1AP7ACXX:1:1101:1268:2121 length=50
 TCTATCCTTTCGGAAAAAGGGACCAAATGCAACATAAAAATGTTTTCTCT
-+SRR3955801.sra.2 DJB775P1:373:D1AP7ACXX:1:1101:1268:2121 length=50
++SRR3955801.2 DJB775P1:373:D1AP7ACXX:1:1101:1268:2121 length=50
 BC@FFFFFHHHHFJJJJJGHIJGHIIJIJGIIIIHIIJJGHGGHIJJJJI
-@SRR3955801.sra.3 DJB775P1:373:D1AP7ACXX:1:1101:1409:2193 length=50
+@SRR3955801.3 DJB775P1:373:D1AP7ACXX:1:1101:1409:2193 length=50
 CGTAAGTCTCCCTTCACCTGTTACAGAGTTTCAGATCGGTCACTGATAGT
 ```
 
@@ -100,15 +101,15 @@ There are many different ways to do this but here is one simple way to script-if
 vi combine-fastq.sh
 <i>
 echo "combining DMSO_1_ATCACG..."
-cat ~/raw_data/DMSO_1_ATCACG* > DMSO_1_ATCACG.combined.fastq
+cat ~/raw_data/fastq/DMSO_1_ATCACG* > DMSO_1_ATCACG.combined.fastq
 echo "combining DMSO_2_CGATGT..."
-cat ~/raw_data/DMSO_2_CGATGT* > DMSO_2_CGATGT.combined.fastq
+cat ~/raw_data/fastq/DMSO_2_CGATGT* > DMSO_2_CGATGT.combined.fastq
 echo "combining DTP_1_CAGATC..."
-cat ~/raw_data/DTP_1_CAGATC* > DTP_1_CAGATC.combined.fastq
+cat ~/raw_data/fastq/DTP_1_CAGATC* > DTP_1_CAGATC.combined.fastq
 echo "combining DTP_2_CCGTCC..."
-cat ~/raw_data/DTP_2_CCGTCC* > DTP_2_CCGTCC.combined.fastq
+cat ~/raw_data/fastq/DTP_2_CCGTCC* > DTP_2_CCGTCC.combined.fastq
 echo "combining DTP_3_GTGAAA..."
-cat ~/raw_data/DTP_3_GTGAAA* > DTP_3_GTGAAA.combined.fastq
+cat ~/raw_data/fastq/DTP_3_GTGAAA* > DTP_3_GTGAAA.combined.fastq
 <esc>
 <:wq!>
 ```

@@ -13,7 +13,9 @@ To begin as usual, let's check that you have featureCounts installed properly:
 
 If featureCounts is not installed (though it should be - see [installations](https://github.com/jvtalwar/2022-MSTP-Bioinformatics-Bootcamp/blob/main/Day_0_Setup/Installations/Installations.ipynb) section 4.4), install it now with conda:
 
-`conda install -c bioconda subread`
+```bash
+conda install -c bioconda subread
+```
 
 Refer to the subread manual to find the command you want to run. Scroll down in the manual to section 6: Read summarization. This package also contains an aligner, but as you hopefully recall we used STAR instead. So we will skip that part and only use the part of the package important for quantification of reads mapping to genes.
 
@@ -34,7 +36,9 @@ Try to write your own SLURM script before looking below!
 
 Here is my completed script below:
 
-`cp ~/fake_script.sh ~/scripts/featureCounts.sh`
+```bash
+cp ~/fake_script.sh ~/scripts/featureCounts.sh
+```
 
 ```bash
 #!/bin/bash
