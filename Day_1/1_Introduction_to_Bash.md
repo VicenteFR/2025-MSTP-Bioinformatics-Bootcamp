@@ -154,8 +154,6 @@ pwd
 
 Now that we're in our new directory, let's make a blank text file here. To do so, we will use a program called `vi`, one of many text editor applications. Others include `emacs` and `nano` (mentioned in this [Unix tutorial](http://korflab.ucdavis.edu/bootcamp.html)), and each of these editors has their own unique feel. For this module, however, we will stick with using `vi`.
 
-![image.png](Introduction_to_Bash_files/image.png)
-
 Start by navigating back to the `bootcamp` directory:
 
 ```bash
@@ -236,13 +234,13 @@ This is where the `less` command comes in. To showcase its power, let's apply it
 ```bash
 cd ~
 pwd
-cp -R /tscc/nfs/home/vfajardorosas/raw_data
+cp -R /tscc/nfs/home/hkcarter/toy_data
 ls
 ```
 
 We'll see the details of command `cp` later on (below). Fow now, let's relocate to the folder with the files needed for this demo:<br/>
 ```bash
-cd raw_data
+cd toy_data
 ls
 ```
 We can see three files, including `rna.fna` and `protein.faa`, which contain RNA nucleotide and protein amino acid sequences, respectively, of different isoforms of the human gene *ITGAE* that encodes protein CD103 (one of my favorites).
@@ -354,7 +352,7 @@ This will display all the files in your home directory, even the [**hidden ones*
 Let's make a copy of the RNA nucleotide sequence text file under the name `rna_cp.fna`. We can do this using the following syntax:
 
 ```bash
-cd ~/raw_data
+cd ~/toy_data
 cp rna.fna rna_cp.fna
 ```
 
@@ -420,7 +418,7 @@ Make **3 directories in your home directory named scripts, projects and raw_data
 ```bash
 mkdir ~/projects
 mkdir ~/scripts
-# mkdir ~/raw_data # Not necessary, because we already made a copy of this one.
+mkdir ~/raw_data
 ```
 
 ## Making softlinks
