@@ -11,7 +11,7 @@
 
 ## Resources for Day 2:
 
-Slides for Day 2 will be posted here.
+Slides for Day 2 are [here](https://docs.google.com/presentation/d/1zibdeWdzBe6-pPRWrQPWNpKVEhlshj4C/edit?slide=id.p1#slide=id.p1).
 
 Video recording for Day 2 will be posted here.
 

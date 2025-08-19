@@ -85,6 +85,7 @@ vi fake_script.sh
 #!/bin/bash
 #SBATCH --job-name=fake_script   # Specify a name for the job
 #SBATCH --output=fake_script.out # Standard output file
+#SBATCH --error=fake_script.err # Standard error file
 #SBATCH --nodes=1                  # Request 1 node
 #SBATCH --ntasks=2                 # Request 2 tasks (processes)
 #SBATCH --mem=2G                   # Request 2 GB of memory
