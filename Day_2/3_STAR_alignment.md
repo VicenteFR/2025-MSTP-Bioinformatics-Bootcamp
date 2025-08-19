@@ -92,7 +92,7 @@ Now copy our fake script into that directory with a new, meaningful name such as
 cp ~/fake_script.sh ~/scripts/star_generate_index.sh
 ```
 
-For this script, we will use a time limit of 3 hours, 1 node, and 16 processors.
+For this script, we will use a time limit of 5 hours, 1 node, and 16 processors.
 
 Use the STAR manual to decide how your STAR command should look like. Once you have decided what your STAR command should look like, add it to your **star_generate_index.sh** script below the PBS flags.
 
@@ -110,7 +110,7 @@ mkdir ~/scratch/annotations/hg19/star
 #SBATCH --nodes=1                  # Request 1 node
 #SBATCH --ntasks=16                # Request 16 tasks (processes)
 #SBATCH --mem=32G                   # Request 32 GB of memory
-#SBATCH --time=3:00:00             # Set a time limit of 1 hour
+#SBATCH --time=5:00:00             # Set a time limit of 5 hours
 #SBATCH --partition=hotel          # Specify the partition name
 #SBATCH --qos=hotel                # Specify the quality of service
 #SBATCH --account=htl191           # Specify the account
@@ -127,25 +127,25 @@ conda activate 2025-mstp-bootcamp
 sbatch star_generate_index.sh
 ```
 
-This will take a **long** while to complete (**ETA**: 3 hrs). If successful your out file, *star_generate_index.out*, should look something like this: <br><br>
+This will take a **long** while to complete (**ETA**: 5 hrs). If successful your out file, *star_generate_index.out*, should look something like this: <br><br>
 
 ```bash
-	STAR --runThreadN 16 --runMode genomeGenerate --genomeDir /tscc/nfs/home/vfajardorosas/scratch/annotations/hg19/star_own --genomeFastaFiles /tscc/nfs/home/vfajardorosas/scratch/annotations/hg19/allchrom.fa --sjdbGTFfile /tscc/nfs/home/vfajardorosas/scratch/annotations/hg19/gencode.v19.annotation.gtf --sjdbOverhang 49 --outFileNamePrefix /tscc/nfs/home/vfajardorosas/scratch/annotations/hg19/star_own
-	STAR version: 2.7.10b   compiled: 2022-11-01T09:53:26-04:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
-Aug 07 11:48:46 ..... started STAR run
-Aug 07 11:48:46 ... starting to generate Genome files
-Aug 07 11:49:28 ..... processing annotations GTF
-Aug 07 11:49:50 ... starting to sort Suffix Array. This may take a long time...
-Aug 07 11:50:02 ... sorting Suffix Array chunks and saving them to disk...
-Aug 07 11:59:15 ... loading chunks from disk, packing SA...
-Aug 07 12:00:18 ... finished generating suffix array
-Aug 07 12:00:18 ... generating Suffix Array index
-Aug 07 12:03:55 ... completed Suffix Array index
-Aug 07 12:03:56 ..... inserting junctions into the genome indices
-Aug 07 12:05:49 ... writing Genome to disk ...
-Aug 07 12:05:52 ... writing Suffix Array to disk ...
-Aug 07 12:06:23 ... writing SAindex to disk
-Aug 07 12:06:26 ..... finished successfully
+	/tscc/nfs/home/vfajardorosas/opt/miniconda3/envs/2025-mstp-bootcamp/bin/STAR-avx2 --runThreadN 16 --runMode genomeGenerate --genomeDir /tscc/nfs/home/vfajardorosas/scratch/annotations/hg19/star --genomeFastaFiles /tscc/nfs/home/vfajardorosas/scratch/annotations/hg19/allchrom.fa --sjdbGTFfile /tscc/nfs/home/vfajardorosas/scratch/annotations/hg19/gencode.v19.annotation.gtf --sjdbOverhang 49 --outFileNamePrefix /tscc/nfs/home/vfajardorosas/scratch/annotations/hg19/star
+	STAR version: 2.7.11b   compiled: 2024-11-25T09:14:51+0000 :/opt/conda/conda-bld/star_1732525954305/work/source
+Aug 14 18:36:20 ..... started STAR run
+Aug 14 18:36:20 ... starting to generate Genome files
+Aug 14 18:37:00 ..... processing annotations GTF
+Aug 14 18:37:22 ... starting to sort Suffix Array. This may take a long time...
+Aug 14 18:37:33 ... sorting Suffix Array chunks and saving them to disk...
+Aug 14 20:13:57 ... loading chunks from disk, packing SA...
+Aug 14 20:16:13 ... finished generating suffix array
+Aug 14 20:16:13 ... generating Suffix Array index
+Aug 14 20:19:00 ... completed Suffix Array index
+Aug 14 20:19:00 ..... inserting junctions into the genome indices
+Aug 14 20:24:02 ... writing Genome to disk ...
+Aug 14 20:24:06 ... writing Suffix Array to disk ...
+Aug 14 20:24:44 ... writing SAindex to disk
+Aug 14 20:24:47 ..... finished successfully
 ```
 
 ## 1d) Check the status of your job
@@ -207,7 +207,7 @@ Using the STAR manual, try to write out the command for mapping reads. If you do
 #SBATCH --nodes=1                  # Request 1 node
 #SBATCH --ntasks=16                 # Request 16 tasks (processes)
 #SBATCH --mem=32G                   # Request 16 GB of memory
-#SBATCH --time=3:00:00             # Set a time limit of 1 hour
+#SBATCH --time=3:00:00             # Set a time limit of 3 hours
 #SBATCH --partition=hotel          # Specify the partition name
 #SBATCH --qos=hotel                # Specify the quality of service
 #SBATCH --account=htl191           # Specify the account
