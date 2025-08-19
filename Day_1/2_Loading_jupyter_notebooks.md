@@ -32,14 +32,14 @@ Note that we don't have to install `galyleo` because it is already comes pre-ins
 It can then be run in much the same way as a interactive job on TSCC. Here is an example command:
 
 ```bash
-galyleo launch --account htl191 --cpus 1 --memory 2G --time-limit 1:00:00 --partition hotel --qos hotel
+galyleo launch --account htl191 --cpus 1 --memory 2 --time-limit 1:00:00 --partition hotel --qos hotel
 ```
 
 Let's break that down:
 - `galyleo launch` is the command to start a Jupyter notebook session
 - `--account htl191` specifies the allocation to use. Remember this is the allocation we used for running the interactive job for installing software.
 - `--cpus 1` specifies the number of CPUs to use. This is the number of CPUs that will be allocated to the Jupyter notebook session. For the purposes of this bootcamp, we will only need 1 CPU.
-- `--memory 4` specifies the amount of memory to use. This is the amount of memory that will be allocated to the Jupyter notebook session. For the purposes of this bootcamp, we will only need 4 GB of memory.
+- `--memory 2` specifies the amount of memory to use. This is the amount of memory that will be allocated to the Jupyter notebook session. For the purposes of this bootcamp, we will only need 2 GB of memory. Note that the syntax involves 
 - `--time-limit 1:00:00` specifies the time limit for the Jupyter notebook session. 
 - `--partition hotel` specifies the partition to use. This is the same partition we used for the interactive job for installing software.
 - `--qos hotel` specifies the quality of service to use. This is the same quality of service we used for the interactive job for installing software.
