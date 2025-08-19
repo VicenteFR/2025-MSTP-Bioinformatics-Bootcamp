@@ -199,7 +199,7 @@ cd ~/Desktop/mstp_bioinformatics
 Now copy your files over:
 
 ```bash
-scp <your_username>@login.tscc.sdsc.edu:~/scratch/fastqc/*.html .
+scp "<your_username>@login.tscc.sdsc.edu:~/scratch/fastqc/*.html" .
 ```
 
 Here we use the wild-card character again. The destination file is simply `“.”` meaning the file that we are currently sitting in on our home computer. This is because we first moved into the directory where we want these files to be copied to.

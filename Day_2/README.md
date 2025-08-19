@@ -13,6 +13,6 @@
 
 Slides for Day 2 are [here](https://docs.google.com/presentation/d/1zibdeWdzBe6-pPRWrQPWNpKVEhlshj4C/edit?slide=id.p1#slide=id.p1).
 
-Video recording for Day 2 will be posted here.
+Video recording for Day 2 is [here](https://drive.google.com/drive/folders/1kv5QWSVsLVE-M35qnSb4Op4D2_HeY0F1).
 
 If you run into any issues or have any questions/concerns feel free to shoot me an email: vfajardorosas@ucsd.edu

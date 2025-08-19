@@ -163,7 +163,7 @@ To do this, let's type the following commands:
 
 ```bash
 cd ~/scratch/annotations/hg19
-cp -R /tscc/nfs/home/hkcarter/star .
+cp -R /tscc/lustre/ddn/scratch/vfajardorosas/annotations/hg19/star .
 ```
 
 ## 1f) Dealing with Errors
