@@ -206,7 +206,7 @@ Using the STAR manual, try to write out the command for mapping reads. If you do
 #SBATCH --error=star_align.err # Standard error file
 #SBATCH --nodes=1                  # Request 1 node
 #SBATCH --ntasks=16                 # Request 16 tasks (processes)
-#SBATCH --mem=16G                   # Request 16 GB of memory
+#SBATCH --mem=32G                   # Request 16 GB of memory
 #SBATCH --time=3:00:00             # Set a time limit of 1 hour
 #SBATCH --partition=hotel          # Specify the partition name
 #SBATCH --qos=hotel                # Specify the quality of service
